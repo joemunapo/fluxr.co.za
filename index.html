@@ -140,22 +140,22 @@
 
                 <div
                   class="code-block"
-                  onclick="copyToClipboard('*130*31026*OTTVoucherCode#')"
+                  onclick="copyToClipboard('*130*31026*VoucherPIN#')"
                 >
                   <span class="code-label">Local recharge:</span>
                   <div class="code-wrapper">
-                    <code class="ussd-code">*130*31026*OTTVoucherCode#</code>
+                    <code class="ussd-code">*130*31026*VoucherPIN#</code>
                   </div>
                 </div>
 
                 <div
                   class="code-block"
-                  onclick="copyToClipboard('*130*31026*OTTVoucherCode*IntlNumber#')"
+                  onclick="copyToClipboard('*130*31026*VoucherPIN*IntlNumber#')"
                 >
                   <span class="code-label">International:</span>
                   <div class="code-wrapper">
                     <code class="ussd-code"
-                      >*130*31026*OTTVoucherCode*IntlNumber#</code
+                      >*130*31026*VoucherPIN*IntlNumber#</code
                     >
                   </div>
                 </div>
@@ -172,16 +172,25 @@
         <p class="partners-title">Trusted Partners</p>
         <div class="partners-logos">
           <img
-            src="assets/blue-voucher.png"
+            src="assets/partners/1voucher.png"
             alt="BluVoucher Partner"
             class="partner-logo"
           />
           <img
-            src="assets/ott-voucher.png"
+            src="assets/partners/blue-voucher.png"
+            alt="BluVoucher Partner"
+            class="partner-logo"
+          />
+          <img
+            src="assets/partners/ott-voucher.png"
             alt="OTT Voucher Partner"
             class="partner-logo"
           />
-          <img src="assets/xash.png" alt="Xash Partner" class="partner-logo" />
+          <img
+            src="assets/partners/xash.png"
+            alt="Xash Partner"
+            class="partner-logo"
+          />
         </div>
       </div>
     </section>
@@ -209,10 +218,10 @@
                   <path d="M7 15h0M2 9.5h20"></path>
                 </svg>
               </div>
-              <h3 class="step-title">Purchase OTT Voucher</h3>
+              <h3 class="step-title">Purchase a voucher</h3>
               <p class="step-description">
-                Buy an OTT voucher with values ranging from R1 to R1000 from any
-                authorized retailer.
+                Buy a voucher (OTT, BluVoucher or 1Voucher) with values ranging
+                from R1 to R1000 from any authorized retailer.
               </p>
             </div>
           </div>
@@ -382,73 +391,110 @@
     </section>
 
     <!-- Countries Coverage -->
-<section id="countries" class="countries">
-  <div class="container">
-    <h2 class="section-heading">Global Coverage</h2>
+    <section id="countries" class="countries">
+      <div class="container">
+        <h2 class="section-heading">Global Coverage</h2>
 
-    <div class="countries-container">
-      <p class="countries-intro">
-        Fluxr allows you to send airtime and data to mobile numbers in multiple countries across
-        Africa, making it perfect for keeping in touch with friends and family abroad.
-      </p>
+        <div class="countries-container">
+          <p class="countries-intro">
+            Fluxr allows you to send airtime and data to mobile numbers in
+            multiple countries across Africa, making it perfect for keeping in
+            touch with friends and family abroad.
+          </p>
 
-      <div class="coverage-layout">
-        <!-- Map on the left -->
-        <div class="coverage-map-container">
-          <div class="coverage-map">
-            <img src="coverage-map.png" alt="Fluxr Coverage Map" class="coverage-map-img" />
+          <div class="coverage-layout">
+            <!-- Map on the left -->
+            <div class="coverage-map-container">
+              <div class="coverage-map">
+                <img
+                  src="coverage-map.png"
+                  alt="Fluxr Coverage Map"
+                  class="coverage-map-img"
+                />
+              </div>
+              <div class="coverage-legend">
+                <div class="legend-item">
+                  <span class="legend-color"></span>
+                  <span class="legend-text">Fluxr Coverage</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Countries list on the right -->
+            <div class="countries-list-container">
+              <div class="countries-grid">
+                <div class="country-item">
+                  <span
+                    class="country-flag"
+                    role="img"
+                    aria-label="Flag of South Africa"
+                    >🇿🇦</span
+                  >
+                  <span class="country-fallback">ZA</span>
+                  <span class="country-name">South Africa</span>
+                </div>
+                <div class="country-item">
+                  <span
+                    class="country-flag"
+                    role="img"
+                    aria-label="Flag of Zimbabwe"
+                    >🇿🇼</span
+                  >
+                  <span class="country-fallback">ZW</span>
+                  <span class="country-name">Zimbabwe</span>
+                </div>
+                <div class="country-item">
+                  <span
+                    class="country-flag"
+                    role="img"
+                    aria-label="Flag of Zambia"
+                    >🇿🇲</span
+                  >
+                  <span class="country-fallback">ZM</span>
+                  <span class="country-name">Zambia</span>
+                </div>
+                <div class="country-item">
+                  <span
+                    class="country-flag"
+                    role="img"
+                    aria-label="Flag of Mozambique"
+                    >🇲🇿</span
+                  >
+                  <span class="country-fallback">MZ</span>
+                  <span class="country-name">Mozambique</span>
+                </div>
+                <div class="country-item">
+                  <span
+                    class="country-flag"
+                    role="img"
+                    aria-label="Flag of Nigeria"
+                    >🇳🇬</span
+                  >
+                  <span class="country-fallback">NG</span>
+                  <span class="country-name">Nigeria</span>
+                </div>
+                <div class="country-item">
+                  <span
+                    class="country-flag"
+                    role="img"
+                    aria-label="Flag of Kenya"
+                    >🇰🇪</span
+                  >
+                  <span class="country-fallback">KE</span>
+                  <span class="country-name">Kenya</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="coverage-legend">
-            <div class="legend-item">
-              <span class="legend-color"></span>
-              <span class="legend-text">Fluxr Coverage</span>
-            </div>
-          </div>
-        </div>
 
-        <!-- Countries list on the right -->
-        <div class="countries-list-container">
-          <div class="countries-grid">
-            <div class="country-item">
-              <span class="country-flag" role="img" aria-label="Flag of South Africa">🇿🇦</span>
-              <span class="country-fallback">ZA</span>
-              <span class="country-name">South Africa</span>
-            </div>
-            <div class="country-item">
-              <span class="country-flag" role="img" aria-label="Flag of Zimbabwe">🇿🇼</span>
-              <span class="country-fallback">ZW</span>
-              <span class="country-name">Zimbabwe</span>
-            </div>
-            <div class="country-item">
-              <span class="country-flag" role="img" aria-label="Flag of Zambia">🇿🇲</span>
-              <span class="country-fallback">ZM</span>
-              <span class="country-name">Zambia</span>
-            </div>
-            <div class="country-item">
-              <span class="country-flag" role="img" aria-label="Flag of Mozambique">🇲🇿</span>
-              <span class="country-fallback">MZ</span>
-              <span class="country-name">Mozambique</span>
-            </div>
-            <div class="country-item">
-              <span class="country-flag" role="img" aria-label="Flag of Nigeria">🇳🇬</span>
-              <span class="country-fallback">NG</span>
-              <span class="country-name">Nigeria</span>
-            </div>
-            <div class="country-item">
-              <span class="country-flag" role="img" aria-label="Flag of Kenya">🇰🇪</span>
-              <span class="country-fallback">KE</span>
-              <span class="country-name">Kenya</span>
-            </div>
+          <div class="countries-more">
+            <a href="#contact"
+              >Contact us to learn about all supported countries</a
+            >
           </div>
         </div>
       </div>
-
-      <div class="countries-more">
-        <a href="#contact">Contact us to learn about all supported countries</a>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- User Journey -->
     <section id="user-journey" class="user-journey">
@@ -461,11 +507,12 @@
             <div class="journey-step" data-step="1">
               <div class="step-number">1</div>
               <div class="step-content">
-                <h3 class="step-title">Purchase an OTT Voucher</h3>
+                <h3 class="step-title">Purchase a Voucher</h3>
                 <div class="step-details">
                   <p class="step-description">
-                    Buy an OTT voucher with values ranging from R1 to R1000 from
-                    any authorized retailer or online platform.
+                    Buy voucher (OTT, BluVoucher or 1Voucher) with values
+                    ranging from R1 to R1000 from any authorized retailer or
+                    online platform.
                   </p>
                 </div>
               </div>
@@ -483,7 +530,7 @@
                     Enter the USSD code on your phone.
                   </p>
                   <div class="code-block">
-                    <code>*130*31026*OTTVoucherCode#</code>
+                    <code>*130*31026*VoucherPIN#</code>
                     <button class="copy-btn" aria-label="Copy code">
                       <svg
                         width="16"
@@ -511,7 +558,7 @@
                   </div>
                   <p class="step-description">For international transfers:</p>
                   <div class="code-block">
-                    <code>*130*31026*OTTVoucherCode*IntlNumber#</code>
+                    <code>*130*31026*VoucherPIN*IntlNumber#</code>
                     <button class="copy-btn" aria-label="Copy code">
                       <svg
                         width="16"
@@ -581,7 +628,7 @@
               <!-- Images for each step (only one will be visible) -->
               <img
                 src="https://picsum.photos/300/600?id=1"
-                alt="OTT Voucher"
+                alt="voucher (OTT, BluVoucher or 1Voucher)"
                 class="phone-image"
                 data-step="1"
               />
@@ -659,7 +706,7 @@
                   </p>
                   <div class="testimonial-author">
                     <img
-                      src="user-sarah.jpg"
+                      src="assets/persons/user.png"
                       alt="Sarah M."
                       class="testimonial-avatar"
                     />
@@ -710,7 +757,7 @@
                   </p>
                   <div class="testimonial-author">
                     <img
-                      src="user-john.jpg"
+                      src="assets/persons/user.png"
                       alt="John T."
                       class="testimonial-avatar"
                     />
@@ -761,7 +808,7 @@
                   </p>
                   <div class="testimonial-author">
                     <img
-                      src="user-michael.jpg"
+                      src="assets/persons/user.png"
                       alt="Michael K."
                       class="testimonial-avatar"
                     />
@@ -832,7 +879,9 @@
         <div class="faq-container">
           <div class="faq-item">
             <button class="faq-question">
-              <span>How do I purchase an OTT voucher?</span>
+              <span
+                >How do I purchase a prepaid voucher?</span
+              >
               <svg
                 class="faq-icon"
                 width="24"
@@ -849,10 +898,9 @@
             </button>
             <div class="faq-answer">
               <p>
-                OTT vouchers can be purchased from authorized retailers,
-                supermarkets, and online platforms throughout South Africa. Look
-                for Fluxr vouchers or ask the cashier about OTT voucher
-                availability.
+                You can buy 1Voucher, BluVoucher, or OTT Vouchers from thousands
+                of authorized retailers, spaza shops, and supermarkets across
+                South Africa. Ask your cashier at checkout.
               </p>
             </div>
           </div>
@@ -956,8 +1004,8 @@
             <div class="faq-answer">
               <p>
                 There are no additional transaction fees when using Fluxr. The
-                amount on your OTT voucher is the amount that will be converted
-                to airtime or data for the recipient.
+                amount on your voucher is the amount that will be converted to
+                airtime or data for the recipient.
               </p>
             </div>
           </div>
@@ -983,7 +1031,8 @@
               <div class="step-bullet"></div>
               <div class="step-content">
                 <p class="quick-step-text">
-                  Purchase an OTT voucher from any authorized retailer
+                  Purchase a 1Voucher, BluVoucher, or OTT Voucher from any
+                  authorized retailer
                 </p>
               </div>
             </div>
@@ -993,9 +1042,7 @@
               <div class="step-content">
                 <p class="quick-step-text">For local recharge, dial:</p>
                 <div class="code-wrapper">
-                  <code class="quick-step-code"
-                    >*130*31026*OTTVoucherCode#</code
-                  >
+                  <code class="quick-step-code">*130*31026*VoucherPIN#</code>
                   <button class="copy-btn" aria-label="Copy code">
                     <svg
                       width="16"
@@ -1030,7 +1077,7 @@
                 <p class="quick-step-text">For international recharge, dial:</p>
                 <div class="code-wrapper">
                   <code class="quick-step-code"
-                    >*130*31026*OTTVoucherCode*IntlNumber#</code
+                    >*130*31026*VoucherPIN*IntlNumber#</code
                   >
                   <button class="copy-btn" aria-label="Copy code">
                     <svg
@@ -1247,8 +1294,8 @@
             </div>
             <p class="footer-description">
               Fluxr enables you to buy airtime and mobile data for recipients
-              both locally and internationally using OTT voucher codes, without
-              requiring internet connectivity.
+              both locally and internationally using popular prepaid voucher
+              codes, without requiring internet connectivity.
             </p>
           </div>
 
