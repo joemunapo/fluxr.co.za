@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@source "../*.html";
+@source "../scripts.js";
+
+@theme {
+  --color-fluxr-dark: #0d372b;
+  --color-fluxr-dark-hover: #0a2a21;
+  --color-fluxr-green: #85ed70;
+  --color-fluxr-green-dark: #5ec24b;
+  --color-fluxr-gray-50: #f9fafb;
+  --color-fluxr-gray-100: #f3f4f6;
+  --color-fluxr-gray-200: #e5e7eb;
+  --color-fluxr-gray-300: #d1d5db;
+  --color-fluxr-gray-400: #9ca3af;
+  --color-fluxr-gray-500: #6b7280;
+  --color-fluxr-gray-600: #4b5563;
+  --color-fluxr-gray-700: #374151;
+  --color-fluxr-gray-800: #1f2937;
+  --color-fluxr-gray-900: #111827;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}

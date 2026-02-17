@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,71 +8,60 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <!-- Navigation -->
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-content">
-          <div class="logo">
-            <a href="/">
-              <img src="fluxr-logo.png" alt="Fluxr" class="logo-img" />
-            </a>
+  <body class="bg-white font-sans text-fluxr-gray-600">
+    <nav class="navbar sticky top-0 z-50 border-b border-fluxr-gray-100 bg-white/95 backdrop-blur">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
+          <a href="/" class="logo inline-flex items-center">
+            <img src="fluxr-logo.png" alt="Fluxr" width="1594" height="430" class="logo-img h-10 w-auto" />
+          </a>
+
+          <div class="nav-links hidden items-center gap-8 md:flex">
+            <a href="#how-it-works" class="nav-link text-base font-medium text-fluxr-gray-700 transition hover:text-fluxr-dark">How It Works</a>
+            <a href="#features" class="nav-link text-base font-medium text-fluxr-gray-700 transition hover:text-fluxr-dark">Features</a>
+            <a href="#countries" class="nav-link text-base font-medium text-fluxr-gray-700 transition hover:text-fluxr-dark">Coverage</a>
+            <a href="#faq" class="nav-link text-base font-medium text-fluxr-gray-700 transition hover:text-fluxr-dark">FAQs</a>
+            <a href="#contact" class="nav-link text-base font-medium text-fluxr-gray-700 transition hover:text-fluxr-dark">Contact</a>
           </div>
 
-          <!-- Desktop Navigation Links -->
-          <div class="nav-links">
-            <a href="#how-it-works" class="nav-link">How It Works</a>
-            <a href="#features" class="nav-link">Features</a>
-            <a href="#countries" class="nav-link">Coverage</a>
-            <a href="#faq" class="nav-link">FAQs</a>
-            <a href="#contact" class="nav-link">Contact</a>
-          </div>
-
-          <div class="nav-buttons">
-            <!-- Desktop Get Started Button -->
-            <a href="#get-started" class="btn btn-primary desktop-only"
+          <div class="nav-buttons flex items-center gap-3">
+            <a
+              href="#get-started"
+              class="btn btn-primary desktop-only hidden cursor-pointer rounded-lg bg-fluxr-dark px-5 py-2.5 text-base font-medium text-white transition hover:-translate-y-0.5 hover:bg-fluxr-dark-hover hover:shadow-md focus:-translate-y-0.5 focus:shadow-md md:inline-flex"
               >Get Started</a
             >
-
-            <!-- Mobile Menu Button -->
             <button
-              class="mobile-menu-btn"
+              class="mobile-menu-btn inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-lg border border-fluxr-gray-200 text-fluxr-dark md:hidden"
               aria-label="Toggle mobile menu"
               aria-expanded="false"
               aria-controls="mobile-menu"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
+              <i class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="mobile-menu">
-        <div class="container">
-          <div class="mobile-menu-links">
-            <a href="#how-it-works" class="mobile-menu-link">How It Works</a>
-            <a href="#features" class="mobile-menu-link">Features</a>
-            <a href="#countries" class="mobile-menu-link">Coverage</a>
-            <a href="#faq" class="mobile-menu-link">FAQs</a>
-            <a href="#contact" class="mobile-menu-link">Contact</a>
-            <a href="#get-started" class="btn btn-primary btn-mobile"
+      <div id="mobile-menu" class="mobile-menu hidden border-t border-fluxr-gray-100 bg-white md:hidden">
+        <div class="mx-auto max-w-[1200px] px-4 py-4 sm:px-6">
+          <div class="mobile-menu-links flex flex-col gap-3">
+            <a href="#how-it-works" class="mobile-menu-link py-1 text-base font-medium text-fluxr-gray-700">How It Works</a>
+            <a href="#features" class="mobile-menu-link py-1 text-base font-medium text-fluxr-gray-700">Features</a>
+            <a href="#countries" class="mobile-menu-link py-1 text-base font-medium text-fluxr-gray-700">Coverage</a>
+            <a href="#faq" class="mobile-menu-link py-1 text-base font-medium text-fluxr-gray-700">FAQs</a>
+            <a href="#contact" class="mobile-menu-link py-1 text-base font-medium text-fluxr-gray-700">Contact</a>
+            <a
+              href="#get-started"
+              class="btn btn-primary btn-mobile inline-flex w-full cursor-pointer justify-center rounded-lg bg-fluxr-dark px-5 py-3 text-base font-semibold text-white transition hover:-translate-y-0.5 hover:bg-fluxr-dark-hover hover:shadow-md focus:-translate-y-0.5 focus:shadow-md"
               >Get Started</a
             >
           </div>
@@ -80,84 +69,44 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
+    <section class="hero border-b border-fluxr-gray-100 bg-white py-12 sm:py-16">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <div class="hero-content grid gap-12 lg:grid-cols-2 lg:items-center">
           <div class="hero-text">
-            <h1>
-              Buy Airtime & Data <span class="highlight">Without Internet</span>
+            <h1 class="text-[2.5rem] leading-[1.2] font-bold text-fluxr-dark md:text-[3rem]">
+              Buy Airtime & Data <span class="relative z-0 inline-block">Without Internet<span class="pointer-events-none absolute bottom-[0.1em] left-0 -z-10 h-[0.3em] w-full rounded-sm bg-fluxr-green"></span></span>
             </h1>
-            <p class="hero-description">
-              Fluxr enables you to buy airtime and mobile data for recipients
-              both locally and internationally using simple USSD codes and
-              popular prepaid vouchers like OTT, BluVoucher, and 1Voucher. No
-              internet or smartphone required.
+            <p class="hero-description mt-5 max-w-xl text-[1.125rem] leading-relaxed text-fluxr-gray-500">
+              Fluxr enables you to buy airtime and mobile data for recipients both locally and internationally using simple USSD codes and popular prepaid vouchers like OTT, BluVoucher, and 1Voucher. No internet or smartphone required.
             </p>
-            <div class="hero-cta">
-              <a href="#get-started" class="btn btn-primary btn-lg"
-                >Get Started</a
-              >
-              <div class="secure-badge">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect
-                    x="3"
-                    y="11"
-                    width="18"
-                    height="11"
-                    rx="2"
-                    ry="2"
-                  ></rect>
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                </svg>
+            <div class="hero-cta mt-7 flex flex-wrap items-center gap-4">
+              <a href="#get-started" class="btn btn-primary btn-lg inline-flex cursor-pointer rounded-lg bg-fluxr-dark px-6 py-3 text-[1.125rem] font-medium text-white transition hover:-translate-y-0.5 hover:bg-fluxr-dark-hover hover:shadow-md focus:-translate-y-0.5 focus:shadow-md">Get Started</a>
+              <div class="secure-badge inline-flex items-center gap-2 text-sm font-medium text-fluxr-gray-600">
+                <i class="fa-solid fa-lock text-sm text-transparent [-webkit-text-stroke:1.2px_#0d372b]" aria-hidden="true"></i>
                 <span>Secure Transactions</span>
               </div>
             </div>
-            <p class="trusted-by">
-              Trusted by thousands of users across South Africa
-            </p>
+            <p class="trusted-by mt-4 text-sm text-fluxr-gray-500">Trusted by thousands of users across South Africa</p>
           </div>
 
-          <div class="hero-visual">
-            <div class="no-internet-badge">No Internet Needed!</div>
-            <div class="phone-mockup">
-              <img
-                src="phone-mockup.png"
-                alt="Fluxr USSD Service Demo"
-                class="phone-img"
-              />
+          <div class="hero-visual relative mx-auto w-full max-w-[400px]">
+            <div class="no-internet-badge absolute -right-3 -top-3 z-10 rounded-full bg-fluxr-green px-4 py-2 text-sm font-semibold text-fluxr-dark shadow-md">No Internet Needed!</div>
+            <div class="phone-mockup rounded-3xl bg-fluxr-green/10 p-5 shadow-sm sm:p-6">
+              <img src="phone-mockup.png" alt="Fluxr USSD Service Demo" width="541" height="583" class="phone-img h-auto w-full rounded-2xl object-contain shadow-md" />
+              <div class="ussd-codes mt-4 rounded-xl border border-fluxr-gray-200 bg-fluxr-gray-50 p-4">
+                <h3 class="ussd-title mb-3 text-base font-semibold text-fluxr-dark">Quick USSD Codes</h3>
 
-              <div class="ussd-codes">
-                <h3 class="ussd-title">Quick USSD Codes</h3>
-
-                <div
-                  class="code-block"
-                  onclick="copyToClipboard('*130*31026*VoucherPIN#')"
-                >
-                  <span class="code-label">Local recharge:</span>
-                  <div class="code-wrapper">
-                    <code class="ussd-code">*130*31026*VoucherPIN#</code>
+                <div class="code-block mb-3 cursor-pointer" onclick="copyToClipboard('*130*31026*VoucherPIN#')">
+                  <span class="code-label mb-1 block text-sm text-fluxr-gray-600">Local recharge:</span>
+                  <div class="code-wrapper rounded-md border border-fluxr-gray-200 bg-white px-3 py-2">
+                    <code class="ussd-code text-sm font-semibold text-fluxr-gray-800">*130*31026*VoucherPIN#</code>
                   </div>
                 </div>
 
-                <div
-                  class="code-block"
-                  onclick="copyToClipboard('*130*31026*VoucherPIN*IntlNumber#')"
-                >
-                  <span class="code-label">International:</span>
-                  <div class="code-wrapper">
-                    <code class="ussd-code"
-                      >*130*31026*VoucherPIN*IntlNumber#</code
-                    >
+                <div class="code-block cursor-pointer" onclick="copyToClipboard('*130*31026*VoucherPIN*IntlNumber#')">
+                  <span class="code-label mb-1 block text-sm text-fluxr-gray-600">International:</span>
+                  <div class="code-wrapper rounded-md border border-fluxr-gray-200 bg-white px-3 py-2">
+                    <code class="ussd-code text-sm font-semibold text-fluxr-gray-800">*130*31026*VoucherPIN*IntlNumber#</code>
                   </div>
                 </div>
               </div>
@@ -167,1265 +116,590 @@
       </div>
     </section>
 
-    <!-- Partners Section -->
-    <section class="partners">
-      <div class="container">
-        <p class="partners-title">Trusted Partners</p>
-        <div class="partners-logos">
-          <img
-            src="assets/partners/1voucher.png"
-            alt="BluVoucher Partner"
-            class="partner-logo"
-          />
-          <img
-            src="assets/partners/blue-voucher.png"
-            alt="BluVoucher Partner"
-            class="partner-logo"
-          />
-          <img
-            src="assets/partners/ott-voucher.png"
-            alt="OTT Voucher Partner"
-            class="partner-logo"
-          />
-          <img
-            src="assets/partners/xash.png"
-            alt="Xash Partner"
-            class="partner-logo"
-          />
+    <section class="partners border-y border-fluxr-gray-100 bg-fluxr-gray-50 py-8">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <p class="partners-title mb-6 text-center text-xs font-medium uppercase tracking-[0.05em] text-fluxr-gray-500">Trusted Partners</p>
+        <div class="partners-logos flex flex-wrap items-center justify-center gap-8">
+          <img src="assets/partners/1voucher.png" alt="1Voucher Partner" width="338" height="113" class="partner-logo h-10 w-auto opacity-80 transition hover:opacity-100" loading="lazy" decoding="async" />
+          <img src="assets/partners/blue-voucher.png" alt="BluVoucher Partner" width="337" height="112" class="partner-logo h-10 w-auto opacity-80 transition hover:opacity-100" loading="lazy" decoding="async" />
+          <img src="assets/partners/ott-voucher.png" alt="OTT Voucher Partner" width="337" height="112" class="partner-logo h-10 w-auto opacity-80 transition hover:opacity-100" loading="lazy" decoding="async" />
+          <img src="assets/partners/xash.png" alt="Xash Partner" width="337" height="112" class="partner-logo h-10 w-auto opacity-80 transition hover:opacity-100" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
 
-    <!-- How It Works -->
-    <section id="how-it-works" class="how-it-works">
-      <div class="container">
-        <h2 class="section-heading">How Fluxr Works</h2>
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <div class="step-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                  <path d="M7 15h0M2 9.5h20"></path>
-                </svg>
+    <section id="how-it-works" class="how-it-works bg-fluxr-gray-50 py-16 sm:py-20">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">How Fluxr Works</h2>
+        <div class="steps-grid grid gap-6 md:grid-cols-3">
+          <div class="step-card cursor-pointer rounded-2xl border border-fluxr-gray-100 bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
+            <div class="step-badge relative mb-4 h-16 w-16">
+              <div class="step-number absolute -left-1 -top-1 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-fluxr-green text-lg font-bold text-fluxr-dark">1</div>
+              <div class="step-icon absolute left-[14px] top-[14px] inline-flex h-10 w-10 items-center justify-center rounded-lg bg-fluxr-green/10 text-fluxr-dark">
+                <i class="fa-solid fa-receipt text-[18px] text-fluxr-dark/70" aria-hidden="true"></i>
               </div>
-              <h3 class="step-title">Purchase a voucher</h3>
-              <p class="step-description">
-                Buy a voucher (OTT, BluVoucher or 1Voucher) with values ranging
-                from R1 to R1000 from any authorized retailer.
-              </p>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title text-lg font-medium text-fluxr-dark/80">Purchase a voucher</h3>
+              <p class="step-description mt-2 text-base leading-relaxed text-fluxr-gray-500">Buy a voucher (OTT, BluVoucher or 1Voucher) with values ranging from R1 to R1000 from any authorized retailer.</p>
             </div>
           </div>
 
-          <div class="step-card">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <div class="step-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                  ></path>
-                </svg>
+          <div class="step-card cursor-pointer rounded-2xl border border-fluxr-gray-100 bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
+            <div class="step-badge relative mb-4 h-16 w-16">
+              <div class="step-number absolute -left-1 -top-1 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-fluxr-green text-lg font-bold text-fluxr-dark">2</div>
+              <div class="step-icon absolute left-[14px] top-[14px] inline-flex h-10 w-10 items-center justify-center rounded-lg bg-fluxr-green/10 text-fluxr-dark">
+                <i class="fa-solid fa-phone text-[18px] text-fluxr-dark/70" aria-hidden="true"></i>
               </div>
-              <h3 class="step-title">Dial USSD Code</h3>
-              <p class="step-description">
-                Dial the appropriate USSD code including your voucher and the
-                recipient's phone number.
-              </p>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title text-lg font-medium text-fluxr-dark/80">Dial USSD Code</h3>
+              <p class="step-description mt-2 text-base leading-relaxed text-fluxr-gray-500">Dial the appropriate USSD code including your voucher and the recipient's phone number.</p>
             </div>
           </div>
 
-          <div class="step-card">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <div class="step-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
+          <div class="step-card cursor-pointer rounded-2xl border border-fluxr-gray-100 bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
+            <div class="step-badge relative mb-4 h-16 w-16">
+              <div class="step-number absolute -left-1 -top-1 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-fluxr-green text-lg font-bold text-fluxr-dark">3</div>
+              <div class="step-icon absolute left-[14px] top-[14px] inline-flex h-10 w-10 items-center justify-center rounded-lg bg-fluxr-green/10 text-fluxr-dark">
+                <i class="fa-regular fa-circle-check text-[18px] text-fluxr-dark/70" aria-hidden="true"></i>
               </div>
-              <h3 class="step-title">Instant Delivery</h3>
-              <p class="step-description">
-                Select your desired bundle and receive instant confirmation via
-                SMS when the transaction is complete.
-              </p>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title text-lg font-medium text-fluxr-dark/80">Instant Delivery</h3>
+              <p class="step-description mt-2 text-base leading-relaxed text-fluxr-gray-500">Select your desired bundle and receive instant confirmation via SMS when the transaction is complete.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="features">
-      <div class="container">
-        <h2 class="section-heading">Why Choose Fluxr</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <line x1="1" y1="1" x2="23" y2="23"></line>
-                <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path>
-                <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path>
-                <path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path>
-                <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path>
-                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
-                <line x1="12" y1="20" x2="12.01" y2="20"></line>
-              </svg>
-            </div>
-            <h3 class="feature-title">No Internet Required</h3>
-            <p class="feature-description">
-              Works on all phones without needing data connection or smartphone.
-            </p>
+    <section id="features" class="features bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Why Choose Fluxr</h2>
+        <div class="features-grid grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="feature-card cursor-pointer rounded-2xl border border-fluxr-gray-100 bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
+            <div class="feature-icon mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-fluxr-green/10 text-fluxr-dark"><i class="fa-solid fa-wifi text-[18px] text-fluxr-dark/70" aria-hidden="true"></i></div>
+            <h3 class="feature-title text-lg font-medium text-fluxr-dark/80">No Internet Required</h3>
+            <p class="feature-description mt-2 text-base text-fluxr-gray-500">Works on all phones without needing data connection or smartphone.</p>
           </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path
-                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="feature-title">International Transfers</h3>
-            <p class="feature-description">
-              Send airtime and data to recipients in multiple countries
-              worldwide.
-            </p>
+          <div class="feature-card cursor-pointer rounded-2xl border border-fluxr-gray-100 bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
+            <div class="feature-icon mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-fluxr-green/10 text-fluxr-dark"><i class="fa-solid fa-globe text-[18px] text-fluxr-dark/70" aria-hidden="true"></i></div>
+            <h3 class="feature-title text-lg font-medium text-fluxr-dark/80">International Transfers</h3>
+            <p class="feature-description mt-2 text-base text-fluxr-gray-500">Send airtime and data to recipients in multiple countries worldwide.</p>
           </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="13 2 13 9 20 9"></polyline>
-                <path d="M13 17v5"></path>
-                <path d="M18 17v5"></path>
-                <path d="M8 17v5"></path>
-                <path d="M3 17v5"></path>
-                <rect x="1" y="9" width="22" height="8" rx="2"></rect>
-              </svg>
-            </div>
-            <h3 class="feature-title">Real-time Processing</h3>
-            <p class="feature-description">
-              Instant transaction processing with immediate SMS confirmations.
-            </p>
+          <div class="feature-card cursor-pointer rounded-2xl border border-fluxr-gray-100 bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
+            <div class="feature-icon mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-fluxr-green/10 text-fluxr-dark"><i class="fa-solid fa-bolt text-[18px] text-fluxr-dark/70" aria-hidden="true"></i></div>
+            <h3 class="feature-title text-lg font-medium text-fluxr-dark/80">Real-time Processing</h3>
+            <p class="feature-description mt-2 text-base text-fluxr-gray-500">Instant transaction processing with immediate SMS confirmations.</p>
           </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-              </svg>
-            </div>
-            <h3 class="feature-title">Secure Transactions</h3>
-            <p class="feature-description">
-              Safe and secure voucher-based system with unique OTT codes.
-            </p>
+          <div class="feature-card cursor-pointer rounded-2xl border border-fluxr-gray-100 bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
+            <div class="feature-icon mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-fluxr-green/10 text-fluxr-dark"><i class="fa-solid fa-shield-halved text-[18px] text-fluxr-dark/70" aria-hidden="true"></i></div>
+            <h3 class="feature-title text-lg font-medium text-fluxr-dark/80">Secure Transactions</h3>
+            <p class="feature-description mt-2 text-base text-fluxr-gray-500">Safe and secure voucher-based system with unique OTT codes.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Countries Coverage -->
-    <section id="countries" class="countries">
-      <div class="container">
-        <h2 class="section-heading">Global Coverage</h2>
+    <section id="countries" class="countries bg-fluxr-gray-50 py-16 sm:py-20">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Global Coverage</h2>
 
-        <div class="countries-container">
-          <p class="countries-intro">
-            Fluxr allows you to send airtime and data to mobile numbers in
-            multiple countries across Africa, making it perfect for keeping in
-            touch with friends and family abroad.
+        <div class="countries-container rounded-2xl bg-white p-6 sm:p-8">
+          <p class="countries-intro mx-auto mb-8 max-w-3xl text-center text-base text-fluxr-gray-500">
+            Fluxr allows you to send airtime and data to mobile numbers in multiple countries across Africa, making it perfect for keeping in touch with friends and family abroad.
           </p>
 
-          <div class="coverage-layout">
-            <!-- Map on the left -->
+          <div class="coverage-layout mb-8 grid gap-6 md:grid-cols-2">
             <div class="coverage-map-container">
-              <div class="coverage-map">
-                <img
-                  src="coverage-map.png"
-                  alt="Fluxr Coverage Map"
-                  class="coverage-map-img"
-                />
+              <div class="coverage-map rounded-xl border border-fluxr-gray-100 bg-white p-4">
+                <img src="coverage-map.png" alt="Fluxr Coverage Map" width="801" height="501" class="coverage-map-img w-full rounded-lg" loading="lazy" decoding="async" />
               </div>
-              <div class="coverage-legend">
-                <div class="legend-item">
-                  <span class="legend-color"></span>
+              <div class="coverage-legend mt-3 flex justify-center">
+                <div class="legend-item inline-flex items-center gap-2 text-sm text-fluxr-gray-700">
+                  <span class="legend-color h-4 w-4 rounded bg-fluxr-green"></span>
                   <span class="legend-text">Fluxr Coverage</span>
                 </div>
               </div>
             </div>
 
-            <!-- Countries list on the right -->
-            <div class="countries-list-container">
-              <div class="countries-grid">
-                <div class="country-item">
-                  <span
-                    class="country-flag"
-                    role="img"
-                    aria-label="Flag of South Africa"
-                    >ðŸ‡¿ðŸ‡¦</span
-                  >
-                  <span class="country-fallback">ZA</span>
-                  <span class="country-name">South Africa</span>
-                </div>
-                <div class="country-item">
-                  <span
-                    class="country-flag"
-                    role="img"
-                    aria-label="Flag of Zimbabwe"
-                    >ðŸ‡¿ðŸ‡¼</span
-                  >
-                  <span class="country-fallback">ZW</span>
-                  <span class="country-name">Zimbabwe</span>
-                </div>
-                <div class="country-item">
-                  <span
-                    class="country-flag"
-                    role="img"
-                    aria-label="Flag of Zambia"
-                    >ðŸ‡¿ðŸ‡²</span
-                  >
-                  <span class="country-fallback">ZM</span>
-                  <span class="country-name">Zambia</span>
-                </div>
-                <div class="country-item">
-                  <span
-                    class="country-flag"
-                    role="img"
-                    aria-label="Flag of Mozambique"
-                    >ðŸ‡²ðŸ‡¿</span
-                  >
-                  <span class="country-fallback">MZ</span>
-                  <span class="country-name">Mozambique</span>
-                </div>
-                <div class="country-item">
-                  <span
-                    class="country-flag"
-                    role="img"
-                    aria-label="Flag of Nigeria"
-                    >ðŸ‡³ðŸ‡¬</span
-                  >
-                  <span class="country-fallback">NG</span>
-                  <span class="country-name">Nigeria</span>
-                </div>
-                <div class="country-item">
-                  <span
-                    class="country-flag"
-                    role="img"
-                    aria-label="Flag of Kenya"
-                    >ðŸ‡°ðŸ‡ª</span
-                  >
-                  <span class="country-fallback">KE</span>
-                  <span class="country-name">Kenya</span>
-                </div>
+            <div class="countries-list-container md:pl-2">
+              <div class="countries-grid grid gap-3 sm:grid-cols-2">
+                <div class="country-item flex cursor-pointer items-center gap-2 rounded-lg border border-fluxr-gray-100 p-3 transition hover:-translate-y-0.5 hover:border-fluxr-green/30 hover:bg-fluxr-green/10 hover:shadow-sm"><span class="country-flag" role="img" aria-label="Flag of South Africa">🇿🇦</span><span class="country-fallback hidden">ZA</span><span class="country-name font-medium text-fluxr-gray-700">South Africa</span></div>
+                <div class="country-item flex cursor-pointer items-center gap-2 rounded-lg border border-fluxr-gray-100 p-3 transition hover:-translate-y-0.5 hover:border-fluxr-green/30 hover:bg-fluxr-green/10 hover:shadow-sm"><span class="country-flag" role="img" aria-label="Flag of Zimbabwe">🇿🇼</span><span class="country-fallback hidden">ZW</span><span class="country-name font-medium text-fluxr-gray-700">Zimbabwe</span></div>
+                <div class="country-item flex cursor-pointer items-center gap-2 rounded-lg border border-fluxr-gray-100 p-3 transition hover:-translate-y-0.5 hover:border-fluxr-green/30 hover:bg-fluxr-green/10 hover:shadow-sm"><span class="country-flag" role="img" aria-label="Flag of Zambia">🇿🇲</span><span class="country-fallback hidden">ZM</span><span class="country-name font-medium text-fluxr-gray-700">Zambia</span></div>
+                <div class="country-item flex cursor-pointer items-center gap-2 rounded-lg border border-fluxr-gray-100 p-3 transition hover:-translate-y-0.5 hover:border-fluxr-green/30 hover:bg-fluxr-green/10 hover:shadow-sm"><span class="country-flag" role="img" aria-label="Flag of Mozambique">🇲🇿</span><span class="country-fallback hidden">MZ</span><span class="country-name font-medium text-fluxr-gray-700">Mozambique</span></div>
+                <div class="country-item flex cursor-pointer items-center gap-2 rounded-lg border border-fluxr-gray-100 p-3 transition hover:-translate-y-0.5 hover:border-fluxr-green/30 hover:bg-fluxr-green/10 hover:shadow-sm"><span class="country-flag" role="img" aria-label="Flag of Nigeria">🇳🇬</span><span class="country-fallback hidden">NG</span><span class="country-name font-medium text-fluxr-gray-700">Nigeria</span></div>
+                <div class="country-item flex cursor-pointer items-center gap-2 rounded-lg border border-fluxr-gray-100 p-3 transition hover:-translate-y-0.5 hover:border-fluxr-green/30 hover:bg-fluxr-green/10 hover:shadow-sm"><span class="country-flag" role="img" aria-label="Flag of Kenya">🇰🇪</span><span class="country-fallback hidden">KE</span><span class="country-name font-medium text-fluxr-gray-700">Kenya</span></div>
               </div>
             </div>
           </div>
 
-          <div class="countries-more">
-            <a href="#contact"
-              >Contact us to learn about all supported countries</a
-            >
+          <div class="countries-more text-center text-sm font-medium text-fluxr-dark underline-offset-2 hover:underline">
+            <a href="#contact">Contact us to learn about all supported countries</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- User Journey -->
-    <section id="user-journey" class="user-journey">
-      <div class="container">
-        <h2 class="section-heading">Simple User Journey</h2>
+    <section id="user-journey" class="user-journey bg-fluxr-gray-50 py-16 sm:py-20">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Simple User Journey</h2>
 
-        <div class="journey-container">
-          <div class="journey-steps">
-            <!-- Step 1 -->
-            <div class="journey-step" data-step="1">
-              <div class="step-number">1</div>
+        <div class="journey-container grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+          <div class="journey-steps relative">
+            <div class="pointer-events-none absolute left-4 top-8 h-[82%] w-0.5 bg-fluxr-green"></div>
+
+            <div class="journey-step group cursor-pointer relative mb-6 pl-12" data-step="1">
+              <div class="step-number absolute left-0 top-0 inline-flex h-9 w-9 items-center justify-center rounded-full bg-fluxr-green text-[17px] font-bold text-fluxr-dark">1</div>
               <div class="step-content">
-                <h3 class="step-title">Purchase a Voucher</h3>
-                <div class="step-details">
-                  <p class="step-description">
-                    Buy voucher (OTT, BluVoucher or 1Voucher) with values
-                    ranging from R1 to R1000 from any authorized retailer or
-                    online platform.
-                  </p>
+                <h3 class="step-title mt-1 text-[19px] font-medium text-fluxr-dark">Purchase a Voucher</h3>
+                <div class="step-details hidden pt-2">
+                  <p class="step-description text-base text-fluxr-gray-600">Buy an OTT, BluVoucher, or 1Voucher from a nearby store or trusted online seller. Voucher values range from R1 to R1000.</p>
                 </div>
               </div>
-              <div class="step-line-vertical"></div>
-              <div class="animated-line"></div>
+              <div class="step-line-vertical absolute left-[18px] top-9 h-[calc(100%+20px)] w-0.5 bg-fluxr-green"></div>
             </div>
 
-            <!-- Step 2 (Active by default) -->
-            <div class="journey-step active" data-step="2">
-              <div class="step-number">2</div>
+            <div class="journey-step active cursor-pointer relative mb-8 pl-12" data-step="2">
+              <div class="step-number absolute left-0 top-0 inline-flex h-9 w-9 items-center justify-center rounded-full bg-fluxr-green text-[17px] font-bold text-fluxr-dark">2</div>
               <div class="step-content">
-                <h3 class="step-title">Dial the USSD Code</h3>
-                <div class="step-details">
-                  <p class="step-description">
-                    Enter the USSD code on your phone.
-                  </p>
-                  <div class="code-block">
-                    <code>*130*31026*VoucherPIN#</code>
-                    <button class="copy-btn" aria-label="Copy code">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <rect
-                          x="9"
-                          y="9"
-                          width="13"
-                          height="13"
-                          rx="2"
-                          ry="2"
-                        ></rect>
-                        <path
-                          d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                        ></path>
-                      </svg>
-                    </button>
+                <h3 class="step-title mt-1 text-[19px] font-medium text-fluxr-dark">Dial the USSD Code</h3>
+                <div class="step-details pt-2">
+                  <p class="step-description text-base text-fluxr-gray-600">Dial the USSD code from any phone and enter your voucher PIN.</p>
+                  <div class="code-block mb-3 rounded-lg border border-fluxr-gray-200 bg-fluxr-gray-100 p-3">
+                    <div class="code-wrapper relative rounded-md border border-fluxr-gray-200 bg-white px-3 py-2 pr-10">
+                      <code class="text-base font-semibold text-fluxr-gray-800">*130*31026*VoucherPIN#</code>
+                      <button class="copy-btn absolute right-2 top-1/2 inline-flex h-7 w-7 cursor-pointer -translate-y-1/2 items-center justify-center rounded text-fluxr-gray-500 transition hover:bg-fluxr-gray-100" aria-label="Copy code">
+                        <i class="fa-regular fa-copy text-base" aria-hidden="true"></i>
+                      </button>
+                    </div>
                   </div>
-                  <p class="step-description">For international transfers:</p>
-                  <div class="code-block">
-                    <code>*130*31026*VoucherPIN*IntlNumber#</code>
-                    <button class="copy-btn" aria-label="Copy code">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <rect
-                          x="9"
-                          y="9"
-                          width="13"
-                          height="13"
-                          rx="2"
-                          ry="2"
-                        ></rect>
-                        <path
-                          d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                        ></path>
-                      </svg>
-                    </button>
+                  <p class="step-description mb-2 text-base text-fluxr-gray-600">For international transfers:</p>
+                  <div class="code-block rounded-lg border border-fluxr-gray-200 bg-fluxr-gray-100 p-3">
+                    <div class="code-wrapper relative rounded-md border border-fluxr-gray-200 bg-white px-3 py-2 pr-10">
+                      <code class="text-base font-semibold text-fluxr-gray-800">*130*31026*VoucherPIN*IntlNumber#</code>
+                      <button class="copy-btn absolute right-2 top-1/2 inline-flex h-7 w-7 cursor-pointer -translate-y-1/2 items-center justify-center rounded text-fluxr-gray-500 transition hover:bg-fluxr-gray-100" aria-label="Copy code">
+                        <i class="fa-regular fa-copy text-base" aria-hidden="true"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="step-line-vertical"></div>
-              <div class="animated-line animating"></div>
+              <div class="step-line-vertical absolute left-[18px] top-9 h-[calc(100%+20px)] w-0.5 bg-fluxr-green"></div>
             </div>
 
-            <!-- Step 3 -->
-            <div class="journey-step" data-step="3">
-              <div class="step-number">3</div>
+            <div class="journey-step cursor-pointer relative mb-6 pl-12" data-step="3">
+              <div class="step-number absolute left-0 top-0 inline-flex h-9 w-9 items-center justify-center rounded-full bg-fluxr-green text-[17px] font-bold text-fluxr-dark">3</div>
               <div class="step-content">
-                <h3 class="step-title">Select Your Bundle</h3>
-                <div class="step-details">
-                  <p class="step-description">
-                    Choose from available airtime or data bundle options based
-                    on the recipient's country and network.
-                  </p>
+                <h3 class="step-title mt-1 text-[19px] font-medium text-fluxr-dark">Select Your Bundle</h3>
+                <div class="step-details hidden pt-2">
+                  <p class="step-description text-base text-fluxr-gray-600">Pick the airtime or data bundle that matches the recipient network and destination country.</p>
                 </div>
               </div>
-              <div class="step-line-vertical"></div>
-              <div class="animated-line"></div>
+              <div class="step-line-vertical absolute left-[18px] top-9 h-[calc(100%+20px)] w-0.5 bg-fluxr-green"></div>
             </div>
 
-            <!-- Step 4 -->
-            <div class="journey-step" data-step="4">
-              <div class="step-number">4</div>
+            <div class="journey-step cursor-pointer relative pl-12" data-step="4">
+              <div class="step-number absolute left-0 top-0 inline-flex h-9 w-9 items-center justify-center rounded-full bg-fluxr-green text-[17px] font-bold text-fluxr-dark">4</div>
               <div class="step-content">
-                <h3 class="step-title">Receive Confirmation</h3>
-                <div class="step-details">
-                  <p class="step-description">
-                    Get an instant SMS confirmation once the transaction is
-                    processed successfully.
-                  </p>
+                <h3 class="step-title mt-1 text-[19px] font-medium text-fluxr-dark">Receive Confirmation</h3>
+                <div class="step-details hidden pt-2">
+                  <p class="step-description text-base text-fluxr-gray-600">Get instant confirmation by SMS as soon as the top-up is sent successfully.</p>
                 </div>
               </div>
-              <div class="animated-line"></div>
             </div>
           </div>
 
-          <!-- Phone image changes with active step -->
-          <div class="journey-visual">
-            <div class="phone-container">
-              <!-- Images for each step (only one will be visible) -->
+          <div class="journey-visual flex flex-col items-center lg:sticky lg:top-24">
+            <div class="phone-container relative mx-auto w-full max-w-[360px] overflow-hidden rounded-[20px] aspect-[640/1147]">
               <img
-                src="https://picsum.photos/300/600?id=1"
-                alt="voucher (OTT, BluVoucher or 1Voucher)"
-                class="phone-image"
+                src="assets/user_journey/webp/1b_purchase-640.webp"
+                srcset="assets/user_journey/webp/1b_purchase-320.webp 320w, assets/user_journey/webp/1b_purchase-640.webp 640w"
+                sizes="(max-width: 768px) 280px, 360px"
+                alt="Purchasing a Fluxr voucher at a retail store"
+                width="640"
+                height="1147"
+                class="phone-image absolute inset-0 h-full w-full rounded-[20px] object-cover opacity-0 shadow-sm transition-opacity duration-500 pointer-events-none"
                 data-step="1"
+                loading="lazy"
+                decoding="async"
               />
               <img
-                src="https://picsum.photos/300/600?id=2"
-                alt="USSD Code Entry"
-                class="phone-image active"
+                src="assets/user_journey/webp/2_dial-640.webp"
+                srcset="assets/user_journey/webp/2_dial-320.webp 320w, assets/user_journey/webp/2_dial-640.webp 640w"
+                sizes="(max-width: 768px) 280px, 360px"
+                alt="Dialing a Fluxr USSD code"
+                width="640"
+                height="1147"
+                class="phone-image active absolute inset-0 h-full w-full rounded-[20px] object-cover opacity-100 shadow-sm transition-opacity duration-500 pointer-events-auto"
                 data-step="2"
+                loading="eager"
+                decoding="async"
               />
               <img
-                src="https://picsum.photos/300/600?id=3"
-                alt="Bundle Selection"
-                class="phone-image"
+                src="assets/user_journey/webp/3_select_bundle-640.webp"
+                srcset="assets/user_journey/webp/3_select_bundle-320.webp 320w, assets/user_journey/webp/3_select_bundle-640.webp 640w"
+                sizes="(max-width: 768px) 280px, 360px"
+                alt="Selecting a bundle after entering voucher details"
+                width="640"
+                height="1147"
+                class="phone-image absolute inset-0 h-full w-full rounded-[20px] object-cover opacity-0 shadow-sm transition-opacity duration-500 pointer-events-none"
                 data-step="3"
+                loading="lazy"
+                decoding="async"
               />
               <img
-                src="https://picsum.photos/300/600?id=4"
-                alt="Confirmation Message"
-                class="phone-image"
+                src="assets/user_journey/webp/4_success-640.webp"
+                srcset="assets/user_journey/webp/4_success-320.webp 320w, assets/user_journey/webp/4_success-640.webp 640w"
+                sizes="(max-width: 768px) 280px, 360px"
+                alt="Receiving successful airtime top-up confirmation"
+                width="640"
+                height="1147"
+                class="phone-image absolute inset-0 h-full w-full rounded-[20px] object-cover opacity-0 shadow-sm transition-opacity duration-500 pointer-events-none"
                 data-step="4"
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
-            <div class="journey-dots">
-              <span class="journey-dot" data-step="1"></span>
-              <span class="journey-dot active" data-step="2"></span>
-              <span class="journey-dot" data-step="3"></span>
-              <span class="journey-dot" data-step="4"></span>
+            <div class="journey-dots mt-5 flex items-center gap-2">
+              <span class="journey-dot cursor-pointer h-2.5 w-2.5 rounded-full bg-fluxr-gray-300" data-step="1"></span>
+              <span class="journey-dot active cursor-pointer h-2.5 w-2.5 rounded-full bg-fluxr-green" data-step="2"></span>
+              <span class="journey-dot cursor-pointer h-2.5 w-2.5 rounded-full bg-fluxr-gray-300" data-step="3"></span>
+              <span class="journey-dot cursor-pointer h-2.5 w-2.5 rounded-full bg-fluxr-gray-300" data-step="4"></span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-      <div class="container">
-        <h2 class="section-heading">What Our Users Say</h2>
-        <div class="testimonial-slider">
+    <section class="testimonials bg-fluxr-gray-50 py-16 sm:py-20">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">What Our Users Say</h2>
+        <div class="testimonial-slider relative mx-auto max-w-3xl">
           <div class="testimonial-wrapper">
-            <div class="testimonial-slide active">
-              <div class="testimonial-card">
-                <div class="testimonial-rating">
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
+            <div class="testimonial-slide active block">
+              <div class="testimonial-card rounded-2xl border border-fluxr-gray-100 bg-white p-8">
+                <div class="testimonial-rating mb-4 flex gap-1">
+                  <i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i>
                 </div>
-                <div class="testimonial-content">
-                  <p class="testimonial-text">
-                    "Fluxr has been a lifesaver for sending airtime to my family
-                    in Zimbabwe. The USSD service works perfectly even when
-                    there's no internet."
-                  </p>
-                  <div class="testimonial-author">
-                    <img
-                      src="assets/persons/user.png"
-                      alt="Sarah M."
-                      class="testimonial-avatar"
-                    />
-                    <div class="testimonial-info">
-                      <h4 class="testimonial-name">Sarah M.</h4>
-                      <p class="testimonial-location">
-                        Johannesburg, South Africa
-                      </p>
-                    </div>
+                <p class="testimonial-text text-lg italic text-fluxr-gray-600">"Fluxr has been a lifesaver for sending airtime to my family in Zimbabwe. The USSD service works perfectly even when there's no internet."</p>
+                <div class="testimonial-author mt-6 flex items-center gap-3">
+                  <img src="assets/persons/user.png" alt="Sarah M." class="testimonial-avatar h-12 w-12 rounded-full object-cover" loading="lazy" decoding="async" />
+                  <div class="testimonial-info">
+                    <h4 class="testimonial-name text-lg font-semibold text-fluxr-dark">Sarah M.</h4>
+                    <p class="testimonial-location text-sm text-fluxr-gray-500">Johannesburg, South Africa</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="testimonial-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-rating">
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
+
+            <div class="testimonial-slide hidden">
+              <div class="testimonial-card rounded-2xl border border-fluxr-gray-100 bg-white p-8">
+                <div class="testimonial-rating mb-4 flex gap-1">
+                  <i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i>
                 </div>
-                <div class="testimonial-content">
-                  <p class="testimonial-text">
-                    "I love how I can top up my mom's phone in Nigeria without
-                    needing internet. The process is quick and the rates are
-                    very competitive."
-                  </p>
-                  <div class="testimonial-author">
-                    <img
-                      src="assets/persons/user.png"
-                      alt="John T."
-                      class="testimonial-avatar"
-                    />
-                    <div class="testimonial-info">
-                      <h4 class="testimonial-name">John T.</h4>
-                      <p class="testimonial-location">
-                        Cape Town, South Africa
-                      </p>
-                    </div>
+                <p class="testimonial-text text-lg italic text-fluxr-gray-600">"I love how I can top up my mom's phone in Nigeria without needing internet. The process is quick and the rates are very competitive."</p>
+                <div class="testimonial-author mt-6 flex items-center gap-3">
+                  <img src="assets/persons/user.png" alt="John T." class="testimonial-avatar h-12 w-12 rounded-full object-cover" loading="lazy" decoding="async" />
+                  <div class="testimonial-info">
+                    <h4 class="testimonial-name text-lg font-semibold text-fluxr-dark">John T.</h4>
+                    <p class="testimonial-location text-sm text-fluxr-gray-500">Cape Town, South Africa</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="testimonial-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-rating">
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
-                  <svg class="star" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    ></path>
-                  </svg>
+
+            <div class="testimonial-slide hidden">
+              <div class="testimonial-card rounded-2xl border border-fluxr-gray-100 bg-white p-8">
+                <div class="testimonial-rating mb-4 flex gap-1">
+                  <i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i><i class="fa-solid fa-star star text-lg text-fluxr-green"></i>
                 </div>
-                <div class="testimonial-content">
-                  <p class="testimonial-text">
-                    "As a small business owner, I use Fluxr to top up my
-                    employees' phones. The voucher system is convenient and
-                    works every time."
-                  </p>
-                  <div class="testimonial-author">
-                    <img
-                      src="assets/persons/user.png"
-                      alt="Michael K."
-                      class="testimonial-avatar"
-                    />
-                    <div class="testimonial-info">
-                      <h4 class="testimonial-name">Michael K.</h4>
-                      <p class="testimonial-location">Pretoria, South Africa</p>
-                    </div>
+                <p class="testimonial-text text-lg italic text-fluxr-gray-600">"As a small business owner, I use Fluxr to top up my employees' phones. The voucher system is convenient and works every time."</p>
+                <div class="testimonial-author mt-6 flex items-center gap-3">
+                  <img src="assets/persons/user.png" alt="Michael K." class="testimonial-avatar h-12 w-12 rounded-full object-cover" loading="lazy" decoding="async" />
+                  <div class="testimonial-info">
+                    <h4 class="testimonial-name text-lg font-semibold text-fluxr-dark">Michael K.</h4>
+                    <p class="testimonial-location text-sm text-fluxr-gray-500">Pretoria, South Africa</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="testimonial-controls">
-            <button
-              class="testimonial-dot active"
-              data-index="0"
-              aria-label="View testimonial 1"
-            ></button>
-            <button
-              class="testimonial-dot"
-              data-index="1"
-              aria-label="View testimonial 2"
-            ></button>
-            <button
-              class="testimonial-dot"
-              data-index="2"
-              aria-label="View testimonial 3"
-            ></button>
+          <div class="testimonial-controls mt-6 flex justify-center gap-2">
+            <button class="testimonial-dot active h-3 w-3 cursor-pointer rounded-full bg-fluxr-green" data-index="0" aria-label="View testimonial 1"></button>
+            <button class="testimonial-dot h-3 w-3 cursor-pointer rounded-full bg-fluxr-gray-300" data-index="1" aria-label="View testimonial 2"></button>
+            <button class="testimonial-dot h-3 w-3 cursor-pointer rounded-full bg-fluxr-gray-300" data-index="2" aria-label="View testimonial 3"></button>
           </div>
 
-          <button class="testimonial-prev" aria-label="Previous testimonial">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          <button class="testimonial-next" aria-label="Next testimonial">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
+          <button class="testimonial-prev absolute left-0 top-1/2 inline-flex h-10 w-10 cursor-pointer -translate-y-1/2 items-center justify-center rounded-full border border-fluxr-gray-200 bg-white text-fluxr-dark shadow-[0_1px_2px_0_rgba(0,0,0,0.05)] md:-left-14" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="testimonial-next absolute right-0 top-1/2 inline-flex h-10 w-10 cursor-pointer -translate-y-1/2 items-center justify-center rounded-full border border-fluxr-gray-200 bg-white text-fluxr-dark shadow-[0_1px_2px_0_rgba(0,0,0,0.05)] md:-right-14" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-      <div class="container">
-        <h2 class="section-heading">Frequently Asked Questions</h2>
-        <div class="faq-container">
-          <div class="faq-item">
-            <button class="faq-question">
+    <section id="social-proof" class="social-proof bg-white py-24 sm:py-28">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading relative mb-6 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Community Momentum</h2>
+        <p class="social-proof-intro mx-auto mb-12 max-w-3xl text-center text-base text-fluxr-gray-500">From SA to Zim in seconds. Stay connected without internet. Simple USSD. Fast delivery.</p>
+        <div class="social-proof-grid grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="social-proof-card group overflow-hidden rounded-xl border border-fluxr-gray-100 bg-fluxr-gray-50 shadow-[0_14px_35px_rgba(13,55,43,0.22)]"><img src="assets/social_media/FB_IMG_1771353181761.jpg" alt="Top-up made easy campaign visual" width="1080" height="1080" class="social-proof-img h-auto w-full origin-center object-cover object-center transition duration-500 group-hover:scale-110" loading="lazy" decoding="async" /></article>
+          <article class="social-proof-card group overflow-hidden rounded-xl border border-fluxr-gray-100 bg-fluxr-gray-50 shadow-[0_14px_35px_rgba(13,55,43,0.22)]"><img src="assets/social_media/FB_IMG_1771353238650.jpg" alt="Send airtime internationally with Fluxr" width="1080" height="1080" class="social-proof-img h-auto w-full origin-center object-cover object-center transition duration-500 group-hover:scale-110" loading="lazy" decoding="async" /></article>
+          <article class="social-proof-card group overflow-hidden rounded-xl border border-fluxr-gray-100 bg-fluxr-gray-50 shadow-[0_14px_35px_rgba(13,55,43,0.22)]"><img src="assets/social_media/FB_IMG_1771353202185.jpg" alt="Stay connected campaign with Fluxr bundles" width="1080" height="1080" class="social-proof-img h-auto w-full origin-center object-cover object-center transition duration-500 group-hover:scale-110" loading="lazy" decoding="async" /></article>
+          <article class="social-proof-card group overflow-hidden rounded-xl border border-fluxr-gray-100 bg-fluxr-gray-50 shadow-[0_14px_35px_rgba(13,55,43,0.22)]"><img src="assets/social_media/FB_IMG_1771353222422.jpg" alt="Fluxr WhatsApp support post" width="1080" height="1080" class="social-proof-img h-auto w-full origin-center object-cover object-center transition duration-500 group-hover:scale-110" loading="lazy" decoding="async" /></article>
+          <article class="social-proof-card group overflow-hidden rounded-xl border border-fluxr-gray-100 bg-fluxr-gray-50 shadow-[0_14px_35px_rgba(13,55,43,0.22)]"><img src="assets/social_media/FB_IMG_1771353312600.jpg" alt="Your connection their smile social campaign" width="1080" height="1080" class="social-proof-img h-auto w-full origin-center object-cover object-center transition duration-500 group-hover:scale-110" loading="lazy" decoding="async" /></article>
+          <article class="social-proof-card group overflow-hidden rounded-xl border border-fluxr-gray-100 bg-fluxr-gray-50 shadow-[0_14px_35px_rgba(13,55,43,0.22)]"><img src="assets/social_media/FB_IMG_1771353253721.jpg" alt="Surprise your loved ones with airtime" width="1080" height="1080" class="social-proof-img h-auto w-full origin-center object-cover object-center transition duration-500 group-hover:scale-110" loading="lazy" decoding="async" /></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Frequently Asked Questions</h2>
+        <div class="faq-container mx-auto max-w-3xl space-y-3">
+          <div class="faq-item overflow-hidden rounded-2xl bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]">
+            <button class="faq-question cursor-pointer flex w-full items-center justify-between px-6 py-4 text-left text-lg font-semibold text-fluxr-dark">
               <span>How do I purchase a prepaid voucher?</span>
-              <svg
-                class="faq-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
+              <i class="fa-solid fa-chevron-down faq-icon text-base transition-transform" aria-hidden="true"></i>
             </button>
-            <div class="faq-answer">
-              <p>
-                You can buy 1Voucher, BluVoucher, or OTT Vouchers from thousands
-                of authorized retailers, spaza shops, and supermarkets across
-                South Africa. Ask your cashier at checkout.
-              </p>
+            <div class="faq-answer hidden px-6 pb-5 text-base text-fluxr-gray-600">
+              <p>You can buy 1Voucher, BluVoucher, or OTT Vouchers from thousands of authorized retailers, spaza shops, and supermarkets across South Africa. Ask your cashier at checkout.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question">
+          <div class="faq-item overflow-hidden rounded-2xl bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]">
+            <button class="faq-question cursor-pointer flex w-full items-center justify-between px-6 py-4 text-left text-lg font-semibold text-fluxr-dark">
               <span>What countries can I send airtime to?</span>
-              <svg
-                class="faq-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
+              <i class="fa-solid fa-chevron-down faq-icon text-base transition-transform" aria-hidden="true"></i>
             </button>
-            <div class="faq-answer">
-              <p>
-                Fluxr supports airtime and data transfers to multiple African
-                countries including South Africa, Zimbabwe, Zambia, Mozambique,
-                Nigeria, Kenya, and more. Our coverage is constantly expanding.
-              </p>
+            <div class="faq-answer hidden px-6 pb-5 text-base text-fluxr-gray-600">
+              <p>Fluxr supports airtime and data transfers to multiple African countries including South Africa, Zimbabwe, Zambia, Mozambique, Nigeria, Kenya, and more. Our coverage is constantly expanding.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question">
+          <div class="faq-item overflow-hidden rounded-2xl bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]">
+            <button class="faq-question cursor-pointer flex w-full items-center justify-between px-6 py-4 text-left text-lg font-semibold text-fluxr-dark">
               <span>Do I need internet to use Fluxr?</span>
-              <svg
-                class="faq-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
+              <i class="fa-solid fa-chevron-down faq-icon text-base transition-transform" aria-hidden="true"></i>
             </button>
-            <div class="faq-answer">
-              <p>
-                No, that's the beauty of Fluxr! Our service works entirely
-                through USSD codes, so you don't need internet access or a
-                smartphone. It works on any mobile phone with basic calling
-                capabilities.
-              </p>
+            <div class="faq-answer hidden px-6 pb-5 text-base text-fluxr-gray-600">
+              <p>No, that's the beauty of Fluxr! Our service works entirely through USSD codes, so you don't need internet access or a smartphone. It works on any mobile phone with basic calling capabilities.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question">
+          <div class="faq-item overflow-hidden rounded-2xl bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]">
+            <button class="faq-question cursor-pointer flex w-full items-center justify-between px-6 py-4 text-left text-lg font-semibold text-fluxr-dark">
               <span>What if my transaction fails?</span>
-              <svg
-                class="faq-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
+              <i class="fa-solid fa-chevron-down faq-icon text-base transition-transform" aria-hidden="true"></i>
             </button>
-            <div class="faq-answer">
-              <p>
-                In the rare case of a failed transaction, our system will
-                automatically refund the voucher amount. If you experience any
-                issues, our customer support team is available to assist you.
-              </p>
+            <div class="faq-answer hidden px-6 pb-5 text-base text-fluxr-gray-600">
+              <p>In the rare case of a failed transaction, our system will automatically refund the voucher amount. If you experience any issues, our customer support team is available to assist you.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question">
+          <div class="faq-item overflow-hidden rounded-2xl bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]">
+            <button class="faq-question cursor-pointer flex w-full items-center justify-between px-6 py-4 text-left text-lg font-semibold text-fluxr-dark">
               <span>Are there any transaction fees?</span>
-              <svg
-                class="faq-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
+              <i class="fa-solid fa-chevron-down faq-icon text-base transition-transform" aria-hidden="true"></i>
             </button>
-            <div class="faq-answer">
-              <p>
-                There are no additional transaction fees when using Fluxr. The
-                amount on your voucher is the amount that will be converted to
-                airtime or data for the recipient.
-              </p>
+            <div class="faq-answer hidden px-6 pb-5 text-base text-fluxr-gray-600">
+              <p>There are no additional transaction fees when using Fluxr. The amount on your voucher is the amount that will be converted to airtime or data for the recipient.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Get Started -->
-    <!-- Get Started -->
-    <section id="get-started" class="get-started">
-      <div class="container">
-        <h2 class="section-heading light">Ready to Get Started?</h2>
-        <p class="get-started-intro">
-          Start sending airtime and data to friends and family locally and
-          internationally with Fluxr's simple USSD service.
-        </p>
+    <section id="get-started" class="get-started bg-fluxr-dark py-16 sm:py-20">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading light relative mb-6 text-center text-[2rem] font-bold text-white after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-white">Ready to Get Started?</h2>
+        <p class="get-started-intro mx-auto mb-10 max-w-3xl text-center text-base text-white/85">Start sending airtime and data to friends and family locally and internationally with Fluxr's simple USSD service.</p>
 
-        <div class="quick-start">
-          <h3 class="quick-start-title">Quick Start Guide</h3>
+        <div class="quick-start mx-auto max-w-4xl rounded-2xl bg-white/95 p-6 shadow-lg sm:p-8">
+          <h3 class="quick-start-title mb-7 text-center text-2xl font-semibold text-fluxr-dark">Quick Start Guide</h3>
 
-          <div class="quick-steps">
-            <div class="quick-step">
-              <div class="step-bullet"></div>
+          <div class="quick-steps space-y-6">
+            <div class="quick-step flex items-start gap-3">
+              <div class="step-bullet mt-2 h-3 w-3 shrink-0 rounded-full bg-fluxr-green"></div>
               <div class="step-content">
-                <p class="quick-step-text">
-                  Purchase a 1Voucher, BluVoucher, or OTT Voucher from any
-                  authorized retailer
-                </p>
+                <p class="quick-step-text text-base text-fluxr-gray-700">Purchase a 1Voucher, BluVoucher, or OTT Voucher from any authorized retailer</p>
               </div>
             </div>
 
-            <div class="quick-step">
-              <div class="step-bullet"></div>
-              <div class="step-content">
-                <p class="quick-step-text">For local recharge, dial:</p>
-                <div class="code-wrapper">
-                  <code class="quick-step-code">*130*31026*VoucherPIN#</code>
-                  <button class="copy-btn" aria-label="Copy code">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect
-                        x="9"
-                        y="9"
-                        width="13"
-                        height="13"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <path
-                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                      ></path>
-                    </svg>
+            <div class="quick-step flex items-start gap-3">
+              <div class="step-bullet mt-2 h-3 w-3 shrink-0 rounded-full bg-fluxr-green"></div>
+              <div class="step-content w-full">
+                <p class="quick-step-text mb-2 text-base text-fluxr-gray-700">For local recharge, dial:</p>
+                <div class="code-wrapper relative rounded-md border border-fluxr-gray-200 bg-fluxr-gray-100 px-3 py-2 pr-10">
+                  <code class="quick-step-code text-base font-semibold text-fluxr-gray-800">*130*31026*VoucherPIN#</code>
+                  <button class="copy-btn absolute right-2 top-1/2 inline-flex h-7 w-7 cursor-pointer -translate-y-1/2 items-center justify-center rounded text-fluxr-gray-500 transition hover:bg-fluxr-gray-200" aria-label="Copy code">
+                    <i class="fa-regular fa-copy text-base" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
             </div>
 
-            <div class="quick-step">
-              <div class="step-bullet"></div>
-              <div class="step-content">
-                <p class="quick-step-text">For international recharge, dial:</p>
-                <div class="code-wrapper">
-                  <code class="quick-step-code"
-                    >*130*31026*VoucherPIN*IntlNumber#</code
-                  >
-                  <button class="copy-btn" aria-label="Copy code">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect
-                        x="9"
-                        y="9"
-                        width="13"
-                        height="13"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <path
-                        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                      ></path>
-                    </svg>
+            <div class="quick-step flex items-start gap-3">
+              <div class="step-bullet mt-2 h-3 w-3 shrink-0 rounded-full bg-fluxr-green"></div>
+              <div class="step-content w-full">
+                <p class="quick-step-text mb-2 text-base text-fluxr-gray-700">For international recharge, dial:</p>
+                <div class="code-wrapper relative rounded-md border border-fluxr-gray-200 bg-fluxr-gray-100 px-3 py-2 pr-10">
+                  <code class="quick-step-code text-base font-semibold text-fluxr-gray-800">*130*31026*VoucherPIN*IntlNumber#</code>
+                  <button class="copy-btn absolute right-2 top-1/2 inline-flex h-7 w-7 cursor-pointer -translate-y-1/2 items-center justify-center rounded text-fluxr-gray-500 transition hover:bg-fluxr-gray-200" aria-label="Copy code">
+                    <i class="fa-regular fa-copy text-base" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="quick-start-cta">
-            <a href="#contact" class="btn btn-light"
-              >Contact Us to Learn More</a
-            >
+          <div class="quick-start-cta mt-8 text-center">
+            <a href="#contact" class="btn btn-light inline-flex cursor-pointer rounded-lg border border-fluxr-dark bg-white px-6 py-3 text-base font-medium text-fluxr-dark transition hover:-translate-y-0.5 hover:bg-fluxr-gray-100 hover:shadow-md focus:-translate-y-0.5 focus:shadow-md">Contact Us to Learn More</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-heading">Get in Touch</h2>
+    <section id="contact" class="contact bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Get in Touch</h2>
 
-        <div class="contact-container">
+        <div class="contact-container grid gap-10 lg:grid-cols-2">
           <div class="contact-info">
-            <h3 class="contact-title">Contact Information</h3>
+            <h3 class="contact-title mb-6 text-2xl font-semibold text-fluxr-dark">Contact Information</h3>
 
-            <div class="contact-details">
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                    ></path>
-                  </svg>
-                </div>
+            <div class="contact-details space-y-5">
+              <div class="contact-item flex items-start gap-4">
+                <div class="contact-icon inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-fluxr-green/20 text-lg text-fluxr-dark"><i class="fa-solid fa-phone text-transparent [-webkit-text-stroke:1.3px_#0d372b]"></i></div>
                 <div class="contact-text">
-                  <h4>Phone</h4>
-                  <p>+27 60 636 0061</p>
+                  <h4 class="text-lg font-semibold text-fluxr-dark">Phone</h4>
+                  <p class="text-base text-fluxr-gray-600">+27 60 636 0061</p>
                 </div>
               </div>
 
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                    ></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                </div>
+              <div class="contact-item flex items-start gap-4">
+                <div class="contact-icon inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-fluxr-green/20 text-lg text-fluxr-dark"><i class="fa-regular fa-envelope text-transparent [-webkit-text-stroke:1.3px_#0d372b]"></i></div>
                 <div class="contact-text">
-                  <h4>Email</h4>
-                  <p>info@fluxr.co.za</p>
+                  <h4 class="text-lg font-semibold text-fluxr-dark">Email</h4>
+                  <p class="text-base text-fluxr-gray-600">info@fluxr.co.za</p>
                 </div>
               </div>
 
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                    ></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
+              <div class="contact-item flex items-start gap-4">
+                <div class="contact-icon inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-fluxr-green/20 text-lg text-fluxr-dark"><i class="fa-solid fa-location-dot text-transparent [-webkit-text-stroke:1.3px_#0d372b]"></i></div>
                 <div class="contact-text">
-                  <h4>Address</h4>
-                  <p>Johannesburg, South Africa</p>
+                  <h4 class="text-lg font-semibold text-fluxr-dark">Address</h4>
+                  <p class="text-base text-fluxr-gray-600">Johannesburg, South Africa</p>
                 </div>
               </div>
             </div>
 
-            <div class="social-links">
-              <h4>Follow Us</h4>
-              <div class="social-icons">
-                <a href="#" class="social-icon" aria-label="Twitter">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="social-icon" aria-label="Facebook">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="social-icon" aria-label="Instagram">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
-                    />
-                  </svg>
-                </a>
+            <div class="social-links mt-8">
+              <h4 class="mb-3 text-lg font-semibold text-fluxr-dark">Follow Us</h4>
+              <div class="social-icons flex gap-3">
+                <a href="https://x.com/fluxr_co_za" class="social-icon inline-flex h-10 w-10 items-center justify-center rounded-full bg-fluxr-green/20 text-lg text-fluxr-dark transition hover:bg-fluxr-green/30" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/fluxr.co.za" class="social-icon inline-flex h-10 w-10 items-center justify-center rounded-full bg-fluxr-green/20 text-lg text-fluxr-dark transition hover:bg-fluxr-green/30" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/fluxr.co.za/" class="social-icon inline-flex h-10 w-10 items-center justify-center rounded-full bg-fluxr-green/20 text-lg text-fluxr-dark transition hover:bg-fluxr-green/30" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/27606360061" class="social-icon inline-flex h-10 w-10 items-center justify-center rounded-full bg-fluxr-green/20 text-lg text-fluxr-dark transition hover:bg-fluxr-green/30" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="contact-form-container">
+          <div class="contact-form-container rounded-2xl bg-white p-6 sm:p-8">
             <form class="contact-form">
-              <h3 class="form-title">Send Us a Message</h3>
+              <h3 class="form-title mb-6 text-2xl font-semibold text-fluxr-dark">Send Us a Message</h3>
 
-              <div class="form-group">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="text" id="name" class="form-input" required />
+              <div class="form-group mb-5">
+                <label for="name" class="form-label mb-2 block text-sm font-medium text-fluxr-gray-700">Your Name</label>
+                <input type="text" id="name" class="form-input w-full rounded-lg border border-fluxr-gray-200 px-4 py-3 text-base text-fluxr-gray-800 outline-none transition focus:border-fluxr-green focus:ring-2 focus:ring-fluxr-green/30" required />
               </div>
 
-              <div class="form-group">
-                <label for="email" class="form-label">Your Email</label>
-                <input type="email" id="email" class="form-input" required />
+              <div class="form-group mb-5">
+                <label for="email" class="form-label mb-2 block text-sm font-medium text-fluxr-gray-700">Your Email</label>
+                <input type="email" id="email" class="form-input w-full rounded-lg border border-fluxr-gray-200 px-4 py-3 text-base text-fluxr-gray-800 outline-none transition focus:border-fluxr-green focus:ring-2 focus:ring-fluxr-green/30" required />
               </div>
 
-              <div class="form-group">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" id="subject" class="form-input" required />
+              <div class="form-group mb-5">
+                <label for="subject" class="form-label mb-2 block text-sm font-medium text-fluxr-gray-700">Subject</label>
+                <input type="text" id="subject" class="form-input w-full rounded-lg border border-fluxr-gray-200 px-4 py-3 text-base text-fluxr-gray-800 outline-none transition focus:border-fluxr-green focus:ring-2 focus:ring-fluxr-green/30" required />
               </div>
 
-              <div class="form-group">
-                <label for="message" class="form-label">Message</label>
-                <textarea
-                  id="message"
-                  rows="5"
-                  class="form-input"
-                  required
-                ></textarea>
+              <div class="form-group mb-6">
+                <label for="message" class="form-label mb-2 block text-sm font-medium text-fluxr-gray-700">Message</label>
+                <textarea id="message" rows="5" class="form-input w-full rounded-lg border border-fluxr-gray-200 px-4 py-3 text-base text-fluxr-gray-800 outline-none transition focus:border-fluxr-green focus:ring-2 focus:ring-fluxr-green/30" required></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-full">
-                Send Message
-              </button>
+              <button type="submit" class="btn btn-primary btn-full inline-flex w-full cursor-pointer justify-center rounded-lg bg-fluxr-dark px-5 py-3 text-base font-medium text-white transition hover:-translate-y-0.5 hover:bg-fluxr-dark-hover hover:shadow-md focus:-translate-y-0.5 focus:shadow-md">Send Message</button>
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
+    <footer class="footer bg-fluxr-dark py-14 text-fluxr-gray-300">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <div class="footer-content grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div class="footer-column">
             <div class="footer-logo">
-              <img
-                src="fluxr-logo-white.png"
-                alt="Fluxr"
-                class="footer-logo-img"
-              />
+              <img src="fluxr-logo-white.png" alt="Fluxr" width="1594" height="430" class="footer-logo-img h-10 w-auto" loading="lazy" decoding="async" />
             </div>
-            <p class="footer-description">
-              Fluxr enables you to buy airtime and mobile data for recipients
-              both locally and internationally using popular vouchers, without
-              requiring internet connectivity.
-            </p>
+            <p class="footer-description mt-4 text-base text-fluxr-gray-300">Fluxr enables you to buy airtime and mobile data for recipients both locally and internationally using popular vouchers, without requiring internet connectivity.</p>
           </div>
 
           <div class="footer-column">
-            <h4 class="footer-title">Quick Links</h4>
-            <ul class="footer-links">
-              <li>
-                <a href="#how-it-works" class="footer-link">How It Works</a>
-              </li>
-              <li><a href="#features" class="footer-link">Features</a></li>
-              <li><a href="#countries" class="footer-link">Coverage</a></li>
-              <li><a href="#faq" class="footer-link">FAQs</a></li>
-              <li><a href="#contact" class="footer-link">Contact</a></li>
+            <h4 class="footer-title mb-4 text-xl font-semibold text-white/85">Quick Links</h4>
+            <ul class="footer-links space-y-2">
+              <li><a href="#how-it-works" class="footer-link text-fluxr-gray-300 transition hover:text-fluxr-green">How It Works</a></li>
+              <li><a href="#features" class="footer-link text-fluxr-gray-300 transition hover:text-fluxr-green">Features</a></li>
+              <li><a href="#countries" class="footer-link text-fluxr-gray-300 transition hover:text-fluxr-green">Coverage</a></li>
+              <li><a href="#faq" class="footer-link text-fluxr-gray-300 transition hover:text-fluxr-green">FAQs</a></li>
+              <li><a href="#contact" class="footer-link text-fluxr-gray-300 transition hover:text-fluxr-green">Contact</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
-            <h4 class="footer-title">Legal</h4>
-            <ul class="footer-links">
-              <li><a href="/terms" class="footer-link">Terms of Service</a></li>
-              <li><a href="/privacy" class="footer-link">Privacy Policy</a></li>
-              <li><a href="/refunds" class="footer-link">Refund Policy</a></li>
+            <h4 class="footer-title mb-4 text-xl font-semibold text-white/85">Legal</h4>
+            <ul class="footer-links space-y-2">
+              <li><a href="/terms" class="footer-link text-fluxr-gray-300 transition hover:text-fluxr-green">Terms of Service</a></li>
+              <li><a href="/privacy" class="footer-link text-fluxr-gray-300 transition hover:text-fluxr-green">Privacy Policy</a></li>
+              <li><a href="/refund" class="footer-link text-fluxr-gray-300 transition hover:text-fluxr-green">Refund Policy</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
-            <h4 class="footer-title">Contact</h4>
-            <ul class="footer-contact">
-              <li class="footer-contact-item">
-                <svg
-                  class="footer-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                  ></path>
-                </svg>
-                <span>+27 60 636 0061</span>
-              </li>
-              <li class="footer-contact-item">
-                <svg
-                  class="footer-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                  ></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-                <span>info@fluxr.co.za</span>
-              </li>
-              <li class="footer-contact-item">
-                <svg
-                  class="footer-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                  ></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span>Johannesburg, South Africa</span>
-              </li>
+            <h4 class="footer-title mb-4 text-xl font-semibold text-white/85">Contact</h4>
+            <ul class="footer-contact space-y-3 text-fluxr-gray-300">
+              <li class="footer-contact-item flex items-center gap-2"><i class="fa-solid fa-phone footer-icon text-transparent [-webkit-text-stroke:1.2px_#85ed70]"></i><span>+27 60 636 0061</span></li>
+              <li class="footer-contact-item flex items-center gap-2"><i class="fa-regular fa-envelope footer-icon text-transparent [-webkit-text-stroke:1.2px_#85ed70]"></i><span>info@fluxr.co.za</span></li>
+              <li class="footer-contact-item flex items-center gap-2"><i class="fa-solid fa-location-dot footer-icon text-transparent [-webkit-text-stroke:1.2px_#85ed70]"></i><span>Johannesburg, South Africa</span></li>
             </ul>
           </div>
         </div>
 
-        <div class="footer-bottom">
-          <p class="copyright">&copy; 2025 Fluxr. All rights reserved.</p>
-          <div class="footer-social">
-            <a href="#" class="footer-social-link" aria-label="Twitter">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                />
-              </svg>
-            </a>
-            <a href="#" class="footer-social-link" aria-label="Facebook">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                />
-              </svg>
-            </a>
-            <a href="#" class="footer-social-link" aria-label="Instagram">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
-                />
-              </svg>
-            </a>
+        <div class="footer-bottom mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+          <p class="copyright text-sm text-white/65">&copy; <span id="footer-year"></span> Fluxr. All rights reserved.</p>
+          <div class="footer-social flex gap-4">
+            <a href="https://x.com/fluxr_co_za" class="footer-social-link text-fluxr-gray-300 transition hover:-translate-y-0.5 hover:text-fluxr-green" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/fluxr.co.za" class="footer-social-link text-fluxr-gray-300 transition hover:-translate-y-0.5 hover:text-fluxr-green" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/fluxr.co.za/" class="footer-social-link text-fluxr-gray-300 transition hover:-translate-y-0.5 hover:text-fluxr-green" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/27606360061" class="footer-social-link text-fluxr-gray-300 transition hover:-translate-y-0.5 hover:text-fluxr-green" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
     </footer>
+
+    <a href="https://wa.me/27606360061" class="support-fab group fixed bottom-5 right-5 z-50 inline-flex cursor-pointer items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(0,0,0,0.28)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(0,0,0,0.35)] focus:-translate-y-0.5" aria-label="Open WhatsApp support chat" target="_blank" rel="noopener noreferrer">
+      <span class="relative inline-flex h-8 w-8 items-center justify-center">
+        <span class="absolute inline-flex h-8 w-8 animate-ping rounded-full bg-white/35"></span>
+        <span class="relative inline-flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#25D366]">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+        </span>
+      </span>
+      <span class="pr-1">Chat Support</span>
+    </a>
 
     <script src="scripts.js"></script>
   </body>
