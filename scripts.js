@@ -33,8 +33,38 @@ function copyToClipboard(text) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  const isHomePage = document.body.classList.contains('home-page');
   const menuBtn = document.querySelector('.mobile-menu-btn');
   const mobileMenu = document.querySelector('.mobile-menu');
+
+  if (isHomePage) {
+    const revealSections = document.querySelectorAll('section.reveal-once');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (revealSections.length) {
+      if (reduceMotion) {
+        revealSections.forEach(section => section.classList.add('is-visible'));
+      } else if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          });
+        }, {
+          threshold: 0.18,
+          rootMargin: '0px 0px -8% 0px'
+        });
+
+        revealSections.forEach(section => {
+          section.classList.add('reveal-ready');
+          revealObserver.observe(section);
+        });
+      } else {
+        revealSections.forEach(section => section.classList.add('is-visible'));
+      }
+    }
+  }
 
   if (menuBtn && mobileMenu) {
     menuBtn.addEventListener('click', function (e) {
@@ -253,10 +283,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const journeySteps = document.querySelectorAll('.journey-step');
   const journeyDots = document.querySelectorAll('.journey-dot');
   const phoneImages = document.querySelectorAll('.phone-image');
+  const JOURNEY_AUTOPLAY_MS = 5000;
 
   if (journeySteps.length && journeyDots.length && phoneImages.length) {
     let currentStep = 2;
     let autoScrollInterval = null;
+    const journeySection = document.getElementById('user-journey');
+    journeySection?.style.setProperty('--journey-progress-duration', `${JOURNEY_AUTOPLAY_MS}ms`);
 
     function updateJourneyStep(stepNumber) {
       currentStep = stepNumber;
@@ -264,12 +297,23 @@ document.addEventListener('DOMContentLoaded', function () {
       journeySteps.forEach(step => {
         const num = Number(step.dataset.step);
         const details = step.querySelector('.step-details');
+        const progressFill = step.querySelector('.journey-step-progress-fill');
         const isActive = num === currentStep;
 
         step.classList.toggle('active', isActive);
         step.classList.toggle('opacity-70', !isActive);
         step.classList.toggle('opacity-100', isActive);
         details?.classList.toggle('hidden', !isActive);
+
+        if (progressFill) {
+          progressFill.classList.remove('is-running');
+          progressFill.style.width = '0%';
+
+          if (isActive) {
+            void progressFill.offsetWidth;
+            progressFill.classList.add('is-running');
+          }
+        }
       });
 
       journeyDots.forEach(dot => {
@@ -294,7 +338,7 @@ document.addEventListener('DOMContentLoaded', function () {
       autoScrollInterval = setInterval(() => {
         const next = currentStep >= 4 ? 1 : currentStep + 1;
         updateJourneyStep(next);
-      }, 5000);
+      }, JOURNEY_AUTOPLAY_MS);
     }
 
     journeySteps.forEach(step => {

@@ -19,3 +19,68 @@
   --color-fluxr-gray-900: #111827;
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
+
+@layer components {
+  .home-page .reveal-once.reveal-ready {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.75s ease, transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .home-page .reveal-once.reveal-ready.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .home-page .reveal-once.reveal-ready .section-heading::after {
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.18s;
+  }
+
+  .home-page .reveal-once.reveal-ready.is-visible .section-heading::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  .home-page .journey-step-progress {
+    height: 2px;
+    width: 100%;
+  }
+
+  .home-page .journey-step-progress-fill {
+    height: 100%;
+    width: 0%;
+  }
+
+  .home-page .journey-step-progress-fill.is-running {
+    animation: journey-progress var(--journey-progress-duration, 5000ms) linear forwards;
+  }
+
+  @keyframes journey-progress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home-page .reveal-once.reveal-ready {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+
+    .home-page .reveal-once.reveal-ready .section-heading::after {
+      transform: translateX(-50%) scaleX(1);
+      transition: none;
+    }
+
+    .home-page .journey-step-progress-fill.is-running {
+      animation: none;
+      width: 100%;
+    }
+  }
+}

@@ -15,9 +15,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles.css?v=20260218" />
+    <link rel="stylesheet" href="styles.css?v=20260218a" />
   </head>
-  <body class="bg-white font-sans text-fluxr-gray-600">
+  <body class="home-page bg-white font-sans text-fluxr-gray-600">
     <nav class="navbar sticky top-0 z-50 border-b border-fluxr-gray-100 bg-white/95 backdrop-blur">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <div class="flex h-20 items-center justify-between">
@@ -69,7 +69,7 @@
       </div>
     </nav>
 
-    <section class="hero border-b border-fluxr-gray-100 bg-white py-12 sm:py-16">
+    <section class="hero reveal-once border-b border-fluxr-gray-100 bg-white py-12 sm:py-16">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <div class="hero-content grid gap-12 lg:grid-cols-2 lg:items-center">
           <div class="hero-text">
@@ -116,7 +116,7 @@
       </div>
     </section>
 
-    <section class="partners border-y border-fluxr-gray-100 bg-fluxr-gray-50 py-8">
+    <section class="partners reveal-once border-y border-fluxr-gray-100 bg-fluxr-gray-50 py-8">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <p class="partners-title mb-6 text-center text-xs font-medium uppercase tracking-[0.05em] text-fluxr-gray-500">Trusted Partners</p>
         <div class="partners-logos flex flex-wrap items-center justify-center gap-8">
@@ -128,7 +128,7 @@
       </div>
     </section>
 
-    <section id="how-it-works" class="how-it-works bg-fluxr-gray-50 py-16 sm:py-20">
+    <section id="how-it-works" class="how-it-works reveal-once bg-fluxr-gray-50 py-16 sm:py-20">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">How Fluxr Works</h2>
         <div class="steps-grid grid gap-6 md:grid-cols-3">
@@ -174,7 +174,7 @@
       </div>
     </section>
 
-    <section id="features" class="features bg-white py-16 sm:py-20">
+    <section id="features" class="features reveal-once bg-white py-16 sm:py-20">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Why Choose Fluxr</h2>
         <div class="features-grid grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -202,7 +202,7 @@
       </div>
     </section>
 
-    <section id="countries" class="countries bg-fluxr-gray-50 py-16 sm:py-20">
+    <section id="countries" class="countries reveal-once bg-fluxr-gray-50 py-16 sm:py-20">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Global Coverage</h2>
 
@@ -243,20 +243,21 @@
       </div>
     </section>
 
-    <section id="user-journey" class="user-journey bg-fluxr-gray-50 py-16 sm:py-20">
+    <section id="user-journey" class="user-journey reveal-once bg-fluxr-gray-50 py-16 sm:py-20">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Simple User Journey</h2>
 
         <div class="journey-container grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
           <div class="journey-steps relative">
-            <div class="pointer-events-none absolute left-4 top-8 h-[82%] w-0.5 bg-fluxr-green"></div>
-
             <div class="journey-step group cursor-pointer relative mb-6 pl-12" data-step="1">
               <div class="step-number absolute left-0 top-0 inline-flex h-9 w-9 items-center justify-center rounded-full bg-fluxr-green text-[17px] font-bold text-fluxr-dark">1</div>
               <div class="step-content">
                 <h3 class="step-title mt-1 text-[19px] font-medium text-fluxr-dark">Purchase a Voucher</h3>
                 <div class="step-details hidden pt-2">
                   <p class="step-description text-base text-fluxr-gray-600">Buy an OTT, BluVoucher, or 1Voucher from a nearby store or trusted online seller. Voucher values range from R1 to R1000.</p>
+                  <div class="journey-step-progress mt-4 overflow-hidden rounded-full bg-fluxr-gray-200">
+                    <span class="journey-step-progress-fill block h-full rounded-full bg-fluxr-green" aria-hidden="true"></span>
+                  </div>
                 </div>
               </div>
               <div class="step-line-vertical absolute left-[18px] top-9 h-[calc(100%+20px)] w-0.5 bg-fluxr-green"></div>
@@ -285,6 +286,9 @@
                       </button>
                     </div>
                   </div>
+                  <div class="journey-step-progress mt-4 overflow-hidden rounded-full bg-fluxr-gray-200">
+                    <span class="journey-step-progress-fill block h-full rounded-full bg-fluxr-green" aria-hidden="true"></span>
+                  </div>
                 </div>
               </div>
               <div class="step-line-vertical absolute left-[18px] top-9 h-[calc(100%+20px)] w-0.5 bg-fluxr-green"></div>
@@ -296,6 +300,9 @@
                 <h3 class="step-title mt-1 text-[19px] font-medium text-fluxr-dark">Select Your Bundle</h3>
                 <div class="step-details hidden pt-2">
                   <p class="step-description text-base text-fluxr-gray-600">Pick the airtime or data bundle that matches the recipient network and destination country.</p>
+                  <div class="journey-step-progress mt-4 overflow-hidden rounded-full bg-fluxr-gray-200">
+                    <span class="journey-step-progress-fill block h-full rounded-full bg-fluxr-green" aria-hidden="true"></span>
+                  </div>
                 </div>
               </div>
               <div class="step-line-vertical absolute left-[18px] top-9 h-[calc(100%+20px)] w-0.5 bg-fluxr-green"></div>
@@ -307,6 +314,9 @@
                 <h3 class="step-title mt-1 text-[19px] font-medium text-fluxr-dark">Receive Confirmation</h3>
                 <div class="step-details hidden pt-2">
                   <p class="step-description text-base text-fluxr-gray-600">Get instant confirmation by SMS as soon as the top-up is sent successfully.</p>
+                  <div class="journey-step-progress mt-4 overflow-hidden rounded-full bg-fluxr-gray-200">
+                    <span class="journey-step-progress-fill block h-full rounded-full bg-fluxr-green" aria-hidden="true"></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -375,7 +385,7 @@
       </div>
     </section>
 
-    <section class="testimonials bg-fluxr-gray-50 py-16 sm:py-20">
+    <section class="testimonials reveal-once bg-fluxr-gray-50 py-16 sm:py-20">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">What Our Users Say</h2>
         <div class="testimonial-slider relative mx-auto max-w-3xl">
@@ -441,7 +451,7 @@
       </div>
     </section>
 
-    <section id="social-proof" class="social-proof bg-white py-24 sm:py-28">
+    <section id="social-proof" class="social-proof reveal-once bg-white py-24 sm:py-28">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <h2 class="section-heading relative mb-6 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Community Momentum</h2>
         <p class="social-proof-intro mx-auto mb-12 max-w-3xl text-center text-base text-fluxr-gray-500">From SA to Zim in seconds. Stay connected without internet. Simple USSD. Fast delivery.</p>
@@ -456,7 +466,7 @@
       </div>
     </section>
 
-    <section id="faq" class="faq bg-white py-16 sm:py-20">
+    <section id="faq" class="faq reveal-once bg-white py-16 sm:py-20">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Frequently Asked Questions</h2>
         <div class="faq-container mx-auto max-w-3xl space-y-3">
@@ -513,7 +523,7 @@
       </div>
     </section>
 
-    <section id="get-started" class="get-started bg-fluxr-dark py-16 sm:py-20">
+    <section id="get-started" class="get-started reveal-once bg-fluxr-dark py-16 sm:py-20">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <h2 class="section-heading light relative mb-6 text-center text-[2rem] font-bold text-white after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-white">Ready to Get Started?</h2>
         <p class="get-started-intro mx-auto mb-10 max-w-3xl text-center text-base text-white/85">Start sending airtime and data to friends and family locally and internationally with Fluxr's simple USSD service.</p>
@@ -563,7 +573,7 @@
       </div>
     </section>
 
-    <section id="contact" class="contact bg-white py-16 sm:py-20">
+    <section id="contact" class="contact reveal-once bg-white py-16 sm:py-20">
       <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <h2 class="section-heading relative mb-12 text-center text-[2rem] font-bold text-fluxr-dark after:absolute after:-bottom-3 after:left-1/2 after:h-1 after:w-16 after:-translate-x-1/2 after:rounded after:bg-fluxr-green">Get in Touch</h2>
 
@@ -701,6 +711,6 @@
       <span class="pr-1">Chat Support</span>
     </a>
 
-    <script src="scripts.js?v=20260218"></script>
+    <script src="scripts.js?v=20260218a"></script>
   </body>
 </html>
