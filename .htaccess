@@ -6,17 +6,14 @@ RewriteEngine On
 RewriteRule ^index(?:\.html)?$ / [R=301,L,NC]
 
 # Canonicalize /page.html -> /page
-RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[\s?]|$) [NC]
 RewriteRule ^ %1 [R=301,L]
 
-# Serve existing files/directories directly
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-
 # Map extensionless routes to .html files when present
-RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-RewriteRule ^(.+)$ $1.html [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
 
 # Use custom 404 page for unknown routes
-ErrorDocument 404 /404
+ErrorDocument 404 /404.html
