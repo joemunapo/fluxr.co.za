@@ -28,11 +28,25 @@ log "syncing approved public files into $PUBLIC_DIR"
 git ls-files -z |
   while IFS= read -r -d '' path; do
     case "$path" in
-      .htaccess|*.html|*.css|*.js|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.webp|*.ico|*.txt|assets/*)
+      assets/*)
+        printf '%s\0' "$path"
+        ;;
+      */*)
+        ;;
+      .htaccess|*.html|*.css|*.js|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.webp|*.ico|*.txt)
         printf '%s\0' "$path"
         ;;
     esac
   done |
   rsync -a --from0 --files-from=- "$SOURCE_DIR"/ "$PUBLIC_DIR"/ >> "$LOG_FILE" 2>&1
+
+rm -rf \
+  "$PUBLIC_DIR/src" \
+  "$PUBLIC_DIR/scripts" \
+  "$PUBLIC_DIR/package.json" \
+  "$PUBLIC_DIR/package-lock.json" \
+  "$PUBLIC_DIR/README.md" \
+  "$PUBLIC_DIR/AGENT_PAGE.md" \
+  "$PUBLIC_DIR/CPANEL_CICD.md"
 
 log "deployment complete at $(git rev-parse --short HEAD)"
