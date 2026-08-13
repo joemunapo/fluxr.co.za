@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @source "../*.html";
+@source "../agents/*.html";
 @source "../scripts.js";
 
 @theme {
