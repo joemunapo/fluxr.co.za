@@ -31,6 +31,7 @@ git ls-files -z |
       assets/*)
         printf '%s\0' "$path"
         ;;
+      # Publish reviewed agent-facing pages without exposing other nested project files.
       agents/*.html)
         printf '%s\0' "$path"
         ;;
