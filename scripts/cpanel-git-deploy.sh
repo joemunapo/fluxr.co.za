@@ -31,6 +31,9 @@ git ls-files -z |
       assets/*)
         printf '%s\0' "$path"
         ;;
+      agents/*.html)
+        printf '%s\0' "$path"
+        ;;
       */*)
         ;;
       .htaccess|*.html|*.css|*.js|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.webp|*.ico|*.txt)
