@@ -35,6 +35,12 @@ git ls-files -z |
       agents/*.html)
         printf '%s\0' "$path"
         ;;
+      # Android App Links. Only this one file: the server's .well-known also
+      # holds cPanel AutoSSL files (acme-challenge, pki-validation), which
+      # rsync leaves alone because nothing here deletes.
+      .well-known/assetlinks.json)
+        printf '%s\0' "$path"
+        ;;
       */*)
         ;;
       .htaccess|*.html|*.css|*.js|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.webp|*.ico|*.txt)

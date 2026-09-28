@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "za.co.fluxr.agents",
+      "sha256_cert_fingerprints": [
+        "2E:63:5D:E5:B7:10:F6:AE:68:81:7E:BC:9F:F5:B4:2A:D0:64:12:62:66:C9:BB:FB:FE:9C:67:70:D4:A2:88:47",
+        "10:29:47:EA:6D:76:DA:3D:60:08:FD:72:3B:64:95:3A:D6:32:14:C5:7B:FC:2C:8F:49:F4:CB:1A:F9:8C:13:9A"
+      ]
+    }
+  }
+]

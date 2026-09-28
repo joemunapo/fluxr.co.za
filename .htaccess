@@ -2,6 +2,20 @@ Options -MultiViews
 
 RewriteEngine On
 
+# Android App Links: /.well-known/ is served as-is (never rewritten or
+# redirected). cPanel AutoSSL also uses this folder (acme-challenge,
+# pki-validation), so nothing here may touch it.
+RewriteRule ^\.well-known/ - [L]
+
+# Agent invite links. With the Fluxr Agents app installed, Android opens
+# https://fluxr.co.za/@naledi_p in the app (App Link). Without it, send the
+# recruit to Google Play with the username as the install referrer; the app
+# reads it on first launch. The referrer is only a prefill hint — sign-up
+# still confirms it. 302, so the target can change later; the app
+# normalises case. A malformed /@… path gets the plain listing.
+RewriteRule ^@([A-Za-z0-9_]{3,30})/?$ https://play.google.com/store/apps/details?id=za.co.fluxr.agents&referrer=utm_source\%3Dagent_invite\%26referrer_username\%3D$1 [R=302,NE,L]
+RewriteRule ^@ https://play.google.com/store/apps/details?id=za.co.fluxr.agents [R=302,L]
+
 # Canonical homepage URL
 RewriteRule ^index(?:\.html)?$ / [R=301,L,NC]
 
@@ -17,3 +31,8 @@ RewriteRule ^(.+?)/?$ $1.html [L]
 
 # Use custom 404 page for unknown routes
 ErrorDocument 404 /404.html
+
+# Digital Asset Links must be JSON, whatever the server's defaults.
+<Files "assetlinks.json">
+  ForceType application/json
+</Files>
