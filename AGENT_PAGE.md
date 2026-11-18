@@ -10,7 +10,7 @@ Sub-headline: Join the Fluxr Referral Program. Earn ongoing commissions by helpi
 
 [Why Partner With Fluxr? / Benefits Section]Headline: Earn While They Connect
 
-Up to 10% Commission: Earn 10% on international recharges in a customer's first 6 months. The rate steps down every 6 months.
+Up to 10% Commission: Earn 10% on international recharges in a customer's first 6 months, then 5%, 2%, 1% and 0.5% for each 6 months that follow. Local (South Africa) recharges earn 2%.
 
 2.5 Years of Earnings: Keep earning from each customer you bring in for 2.5 years.
 
@@ -18,13 +18,13 @@ Paid to Your Wallet: Commission lands in your Fluxr Agents app wallet when your 
 
 Unlimited Earning Potential: There is no cap on the number of customers you can refer.
 
-> Note: Commission starts from your customer's second purchase. International recharges earn up to 10%. Local (South Africa) recharges earn 2%.
+> Note: You earn on purchases a customer makes once they are linked to you. Their first purchase earns nothing.
 
 [How It Works Section]Headline: Start Earning in 3 Simple Steps
 
 Educate: Teach new users how to easily send airtime or data back home using the Fluxr USSD code.
 
-Log the Client: Link each new customer to you within 48 hours of their first purchase or app registration. They dial *130*31026*CODE# with your agent code, or you claim them in the Fluxr Agents app.
+Log the Client: Link each new customer to you within 48 hours of their first purchase or app registration. They dial `*130*31026*CODE#` with your agent code, or you claim them in the Fluxr Agents app.
 
 Get Paid: Track your total users, pending commissions, and all-time referrals directly from your OTP-secured dashboard.
 
@@ -83,7 +83,7 @@ Headline: Earn Passive Income with Fluxr.Sub-headline: Join our Referral Program
 Headline: Build a Sustainable Income Stream
 Turn your network into net worth. Our agent program is designed to reward you for every connection you facilitate.
 
-Up to 10% Commission: You earn 10% on international recharges in a customer's first 6 months. The rate steps down every 6 months. Local (South Africa) recharges earn 2%.
+Up to 10% Commission: You earn 10% on international recharges in a customer's first 6 months, then 5%, 2%, 1% and 0.5% for each 6 months that follow. Local (South Africa) recharges earn 2%.
 
 2.5-Year Earning Period: You keep earning commission on each customer's purchases for 2.5 years (30 months) from their first purchase.
 
@@ -98,7 +98,7 @@ Register: Submit your details to become an authorized Fluxr Agent.
 
 Refer: Teach new users how to send international airtime or data using our simple USSD code.
 
-Log & Lock: Link each new customer to you within 48 hours of their first purchase or app registration. They dial *130*31026*CODE# with your agent code, or you claim them in the Fluxr Agents app.
+Log & Lock: Link each new customer to you within 48 hours of their first purchase or app registration. They dial `*130*31026*CODE#` with your agent code, or you claim them in the Fluxr Agents app.
 
 Earn: Watch your commission balance grow with every recharge they make.
 
