@@ -1,3 +1,5 @@
+Update, 18 November 2026 (https://github.com/joemunapo/app.fluxr.co.za/issues/81): the agent rules in this copy follow the decisions in that issue. An agent earns on a customer for 2.5 years (30 months). International recharges earn 10% in months 1–6, 5% in months 7–12, 2% in months 13–18, 1% in months 19–24 and 0.5% in months 25–30. Local (South Africa) recharges earn 2%. A customer can be linked to an agent within 48 hours of the customer's first purchase or app registration.
+
 Here is the finalized, conversion-optimized copy for both website updates, incorporating all the exact rules from your documentation and backend logic.
 
 1. New Page Copy: "Become an Agent"
@@ -8,21 +10,21 @@ Sub-headline: Join the Fluxr Referral Program. Earn ongoing commissions by helpi
 
 [Why Partner With Fluxr? / Benefits Section]Headline: Earn While They Connect
 
-10% Commission: Earn a solid 10% on every international airtime sale made by customers you refer.
+Up to 10% Commission: Earn 10% on international recharges in a customer's first 6 months, then 5%, 2%, 1% and 0.5% for each 6 months that follow. Local (South Africa) recharges earn 2%.
 
-5 Years of Passive Income: You earn commission on your referred client's transactions for 5 full years after they register.
+2.5 Years of Earnings: Keep earning from each customer you bring in for 2.5 years.
 
-Consistent Payouts: Commissions are automatically paid out to your bank or e-wallet every 1st and 15th of the month.
+Paid to Your Wallet: Commission lands in your Fluxr Agents app wallet when your customer's purchase goes through. Withdraw it to your bank, as a voucher or as cash.
 
 Unlimited Earning Potential: There is no cap on the number of customers you can refer.
 
-> Note: Commission payments begin from your customer's second recharge transaction. Only international recharges qualify.
+> Note: You earn on purchases a customer makes once they are linked to you. Their first purchase earns nothing.
 
 [How It Works Section]Headline: Start Earning in 3 Simple Steps
 
 Educate: Teach new users how to easily send airtime or data back home using the Fluxr USSD code.
 
-Log the Client: Enter the client's phone number and their first transaction reference into your Agent Portal within 24 hours of their first top-up.
+Log the Client: Link each new customer to you within 48 hours of their first purchase or app registration. They dial `*130*31026*CODE#` with your agent code, or you claim them in the Fluxr Agents app.
 
 Get Paid: Track your total users, pending commissions, and all-time referrals directly from your OTP-secured dashboard.
 
@@ -75,17 +77,17 @@ Part 1: New Page - "Become an Agent"
 URL: https://fluxr.co.za/become-an-agent
 
 [Hero Section]
-Headline: Earn Passive Income with Fluxr.Sub-headline: Join our Referral Program today. Help people connect home and earn 10% commission on every transaction for 5 years.CTA Button: [Start Earning Now]
+Headline: Earn Passive Income with Fluxr.Sub-headline: Join our Referral Program today. Help people connect home and earn up to 10% commission for 2.5 years.CTA Button: [Start Earning Now]
 
 [Value Proposition: Why Join?]
 Headline: Build a Sustainable Income Stream
 Turn your network into net worth. Our agent program is designed to reward you for every connection you facilitate.
 
-10% Flat Commission: You earn 10% on every airtime or data sale made by customers you refer.
+Up to 10% Commission: You earn 10% on international recharges in a customer's first 6 months, then 5%, 2%, 1% and 0.5% for each 6 months that follow. Local (South Africa) recharges earn 2%.
 
-5-Year Earning Period: This isn't a one-time payout. You continue to earn commission on your referred client's transactions for 5 full years from their registration.
+2.5-Year Earning Period: You keep earning commission on each customer's purchases for 2.5 years (30 months) from their first purchase.
 
-Guaranteed Bi-Monthly Payouts: We pay out earnings automatically every 1st and 15th of the month directly to your bank account or e-wallet.
+Paid to Your Wallet: Your commission lands in your Fluxr Agents app wallet when your customer's purchase goes through. You withdraw it to your bank account, as a voucher or as cash.
 
 Unlimited Growth: There is no cap on the number of customers you can refer. The more people you help, the more you earn.
 
@@ -96,7 +98,7 @@ Register: Submit your details to become an authorized Fluxr Agent.
 
 Refer: Teach new users how to send international airtime or data using our simple USSD code.
 
-Log & Lock: Log your client’s mobile number and first transaction reference into your Agent Portal within 24 hours.
+Log & Lock: Link each new customer to you within 48 hours of their first purchase or app registration. They dial `*130*31026*CODE#` with your agent code, or you claim them in the Fluxr Agents app.
 
 Earn: Watch your commission balance grow with every recharge they make.
 
