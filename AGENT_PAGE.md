@@ -14,7 +14,7 @@ Up to 10% Commission: Earn 10% on international recharges in a customer's first 
 
 2.5 Years of Earnings: Keep earning from each customer you bring in for 2.5 years.
 
-Consistent Payouts: Commissions are automatically paid out to your bank or e-wallet every 1st and 15th of the month.
+Paid to Your Wallet: Commission lands in your Fluxr Agents app wallet when your customer's purchase goes through. Withdraw it to your bank, as a voucher or as cash.
 
 Unlimited Earning Potential: There is no cap on the number of customers you can refer.
 
@@ -87,7 +87,7 @@ Up to 10% Commission: You earn 10% on international recharges in a customer's fi
 
 2.5-Year Earning Period: You keep earning commission on each customer's purchases for 2.5 years (30 months) from their first purchase.
 
-Guaranteed Bi-Monthly Payouts: We pay out earnings automatically every 1st and 15th of the month directly to your bank account or e-wallet.
+Paid to Your Wallet: Your commission lands in your Fluxr Agents app wallet when your customer's purchase goes through. You withdraw it to your bank account, as a voucher or as cash.
 
 Unlimited Growth: There is no cap on the number of customers you can refer. The more people you help, the more you earn.
 
